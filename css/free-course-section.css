@@ -1,0 +1,250 @@
+/* Free Course Section */
+.free-course-section {
+    background: white;
+    padding: 80px 40px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.free-course-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.free-course-header {
+    margin-bottom: 48px;
+}
+
+.free-course-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #f0f4ff;
+    color: #667eea;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.free-course-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.free-course-subtitle {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto 48px;
+    line-height: 1.5;
+}
+
+.email-signup-form {
+    display: flex;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto 56px;
+}
+
+.email-input {
+    flex: 1;
+    padding: 16px 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.email-input:hover {
+    border-color: #d1d5db;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.email-input::placeholder {
+    color: #9ca3af;
+}
+
+.signup-button {
+    background: #667eea;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+}
+
+.signup-button:hover {
+    background: #5b6de8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.signup-button:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.signup-note {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-bottom: 48px;
+}
+
+.syllabus-preview {
+    background: #f9fafb;
+    border-radius: 20px;
+    padding: 48px;
+    border: 1px solid #e5e7eb;
+}
+
+.syllabus-preview-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.syllabus-days {
+    display: grid;
+    gap: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.syllabus-day {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 8px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.syllabus-day:hover {
+    background: #fafbfc;
+}
+
+.day-number {
+    background: #667eea;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.syllabus-day:hover .day-number {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.day-content {
+    flex: 1;
+}
+
+.day-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.day-description {
+    font-size: 0.875rem;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+/* Form Success Message */
+.form-success {
+    background: #10b981;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    margin: 20px auto;
+    max-width: 500px;
+    display: none;
+}
+
+.form-success.show {
+    display: block;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .free-course-section {
+        padding: 60px 20px;
+    }
+
+    .free-course-title {
+        font-size: 2rem;
+    }
+
+    .free-course-subtitle {
+        font-size: 1.125rem;
+    }
+
+    .email-signup-form {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .email-input,
+    .signup-button {
+        width: 100%;
+    }
+
+    .syllabus-preview {
+        padding: 32px 24px;
+    }
+
+    .syllabus-day {
+        gap: 12px;
+    }
+
+    .day-number {
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+}
+
