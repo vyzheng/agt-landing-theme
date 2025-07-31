@@ -34,9 +34,9 @@
     $components = array(
     'hero-section.php',
     'content-section.php',           // Admissions Game Theory
-    'courses-section.php',           // Choose Your Course (pricing)
     'instructor-section.php',        // Meet Your Instructor
     'testimonials-section.php',      // Success Stories (reviews)
+    'courses-section.php',           // Choose Your Course (pricing)
     'syllabus-section.php',          // Flagship Course Curriculum
     'post-syllabus-cta-section.php', // Decision CTA (after syllabus)
     'guarantee-section.php',         // 100% Money-Back Guarantee
