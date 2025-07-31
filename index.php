@@ -32,18 +32,18 @@
     <?php
     // Include all components
     $components = array(
-        'hero-section.php',
-        'content-section.php',
-        'testimonials-section.php',
-        'courses-section.php',
-        'instructor-section.php',
-        'syllabus-section.php',
-        'faq-section.php',
-        'free-course-section.php',
-        'guarantee-section.php',
-        'post-syllabus-cta-section.php',
-        'final-unlock-section.php'
-    );
+    'hero-section.php',
+    'content-section.php',           // Admissions Game Theory
+    'courses-section.php',           // Choose Your Course (pricing)
+    'instructor-section.php',        // Meet Your Instructor
+    'testimonials-section.php',      // Success Stories (reviews)
+    'syllabus-section.php',          // Flagship Course Curriculum
+    'post-syllabus-cta-section.php', // Decision CTA (after syllabus)
+    'guarantee-section.php',         // 100% Money-Back Guarantee
+    'faq-section.php',               // FAQ
+    'free-course-section.php',       // Free 7-Day Email Course
+    'final-unlock-section.php'       // Final Unlock CTA
+);
     
     foreach ($components as $component) {
         $file = get_template_directory() . '/components/' . $component;
