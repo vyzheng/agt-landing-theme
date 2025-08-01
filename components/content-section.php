@@ -9,9 +9,9 @@
 <body>
     <div class="content-section" id="course">
         <div class="content-container">
-            <h2 class="section-title">Admissions Game Theory</h2>
+            <h2 class="section-title">How to get in without getting lucky</h2>
             <p class="section-subtitle">
-                The only science-backed resource for Ivy League college admissions
+                Know the rules, learn the moves, beat the odds
             </p>
             
             <div class="features-grid">

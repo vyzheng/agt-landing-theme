@@ -30,7 +30,7 @@
         </div>
         
         <h1 class="headline">
-            Get an <span class="highlight">Unfair Advantage</span><br>in College Admissions
+            Get Your <span class="highlight">Unfair Advantage</span><br>in College Admissions
         </h1>
         
         <h2 class="subheadline">
