@@ -1,7 +1,7 @@
 /* Stakes Section - Ultra Compact Design */
 .stakes-section {
-    background: #f9fafb;
-    padding: 25px 40px 10px;
+    background: #fcfdfe;
+    padding: 40px 40px 20px;
 }
 
 .stakes-container {
@@ -17,6 +17,30 @@
     margin-bottom: 10px;
     letter-spacing: -0.02em;
     line-height: 1.1;
+}
+
+.soft-highlight {
+    position: relative;
+    display: inline-block;
+    padding: 0 4px;
+    z-index: 0;
+}
+
+.soft-highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.15em;
+    height: 0.7em;
+    background: linear-gradient(90deg, 
+        rgba(102, 126, 234, 0.1) 0%, 
+        rgba(102, 126, 234, 0.15) 25%,
+        rgba(139, 92, 246, 0.12) 50%,
+        rgba(124, 58, 237, 0.15) 75%,
+        rgba(124, 58, 237, 0.1) 100%);
+    z-index: -1;
+    border-radius: 3px;
 }
 
 .stakes-subtitle {

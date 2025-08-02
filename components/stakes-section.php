@@ -1,7 +1,7 @@
 <!-- Stakes Section -->
 <section class="stakes-section">
     <div class="stakes-container">
-        <h2 class="stakes-title">Ivy+ rewrites your future </h2>
+        <h2 class="stakes-title">Ivy+ <span class="soft-highlight">rewrites</span> your future</h2>
         <p class="stakes-subtitle">
             Compared to flagship public grads, Ivy+ students are
         </p>

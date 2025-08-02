@@ -1,16 +1,17 @@
 <!-- Solution Section -->
 <section class="solution-section" id="course">
     <div class="solution-container">
-        <h2 class="solution-title">How to get in without getting lucky</h2>
+        <h2 class="solution-title">How to get in without getting lucky 👇</h2>
         <p class="solution-subtitle">
             Know the rules, learn the moves, win the game
         </p>
+
         
         <div class="solution-feature-grid">
             <div class="solution-feature-item">
                 <span class="solution-feature-emoji">📊</span>
                 <div class="solution-feature-text">
-                    <h3>It's a Game. Learn How It's Scored.</h3>
+                    <h3>It’s a game – learn how it’s scored</h3>
                     <p>They're playing blind. <strong>You won't.</strong></p>
                     <ul>
                         <li>What are you actually being scored on?</li>
@@ -23,7 +24,7 @@
             <div class="solution-feature-item">
                 <span class="solution-feature-emoji">🎯</span>
                 <div class="solution-feature-text">
-                    <h3>Do Less. Win More.</h3>
+                    <h3>Do less, win more </h3>
                     <p>They throw darts. <strong>You'll aim.</strong></p>
                     <ul>
                         <li>Which activities give you the highest ROI?</li>
@@ -36,7 +37,7 @@
             <div class="solution-feature-item">
                 <span class="solution-feature-emoji">✍️</span>
                 <div class="solution-feature-text">
-                    <h3>Nail the Pitch. Win the Votes.</h3>
+                    <h3>Nail the pitch – win the votes</h3>
                     <p>Most essays blend in. Some get you cut. <strong>Yours hits.</strong></p>
                     <ul>
                         <li>Why do "great" essays fail to convert?</li>
@@ -49,7 +50,7 @@
             <div class="solution-feature-item">
                 <span class="solution-feature-emoji">💡</span>
                 <div class="solution-feature-text">
-                    <h3>Real Help. Only When You Need It.</h3>
+                    <h3>Real help, only when you need it </h3>
                     <p>No strangers. No group calls. No long-term contracts.</p>
                     <ul>
                         <li>Work directly with Dr. Vivian.</li>
