@@ -11,7 +11,9 @@
     // Load CSS files
     $css_files = array(
         'hero-section.css',
-        'research-section.css',          // NEW: research-section.css
+        //'research-section.css',          // NEW: research-section.css
+        'stakes-section.css',
+        'solution-section.css',
         'testimonials-section.css',
         'courses-section.css',
         'instructor-section.css',
@@ -33,7 +35,9 @@
     // Include all components
     $components = array(
         'hero-section.php',
-        'research-section.php',          // NEW: research-section.php
+        //'research-section.php',          // NEW: research-section.php
+        'stakes-section.php',          // Stakes Section
+        'solution-section.php',        // Solution Sectio
         'instructor-section.php',        // Meet Your Instructor
         'testimonials-section.php',      // Success Stories (reviews)
         'courses-section.php',           // Choose Your Course (pricing)

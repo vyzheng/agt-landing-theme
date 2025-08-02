@@ -1,0 +1,150 @@
+/* Stakes Section - Ultra Compact Design */
+.stakes-section {
+    background: #f9fafb;
+    padding: 25px 40px 10px;
+}
+
+.stakes-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stakes-title {
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 10px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.stakes-subtitle {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+/* Stats Row */
+.stakes-stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Increase this for more space between stats */
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.stakes-stat-item {
+    text-align: center;
+}
+
+.stakes-stat-value {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #1f2937;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.stakes-stat-value strong {
+    font-weight: 600;
+    background: linear-gradient(135deg, #667eea 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stakes-stat-label {
+    font-size: 0.8rem;
+    color: #6b7280;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+}
+
+/* Control line break spacing */
+.stakes-stat-label br {
+    content: "";
+    display: block;
+    margin: 5px 0;
+}
+
+/* Attribution - Simple Text Style */
+.stakes-attribution {
+    text-align: center;
+    font-size: 0.68rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 20px auto 16px;
+}
+
+.stakes-attribution strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.stakes-attribution .highlight {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #1f2937;
+    display: inline-block;
+    -webkit-text-fill-color: initial; /* Override any inherited transparent fill */
+}
+
+.stakes-attribution .credentials {
+    font-size: 0.68rem;
+    color: #9ca3af;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .stakes-section {
+        padding: 20px 20px 16px;
+    }
+    
+    .stakes-title {
+        font-size: 2rem;
+    }
+    
+    .stakes-subtitle {
+        font-size: 1.125rem;
+        margin-bottom: 12px;
+    }
+    
+    .stakes-stats-row {
+        gap: 32px; /* Adjust mobile gap here */
+    }
+    
+    .stakes-stat-value {
+        font-size: 1.25rem;
+    }
+    
+    .stakes-stat-label {
+        font-size: 0.625rem;
+    }
+    
+    .stakes-attribution {
+        padding: 10px 16px;
+        margin: 16px auto 12px;
+    }
+    
+    .attribution-content {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    
+    .divider-vertical {
+        width: 40px;
+        height: 1px;
+    }
+    
+    .data-info {
+        text-align: center;
+    }
+    
+}
