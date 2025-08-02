@@ -11,7 +11,7 @@
     // Load CSS files
     $css_files = array(
         'hero-section.css',
-        'content-section.css',
+        'research-section.css',          // NEW: research-section.css
         'testimonials-section.css',
         'courses-section.css',
         'instructor-section.css',
@@ -32,18 +32,18 @@
     <?php
     // Include all components
     $components = array(
-    'hero-section.php',
-    'content-section.php',           // Admissions Game Theory
-    'instructor-section.php',        // Meet Your Instructor
-    'testimonials-section.php',      // Success Stories (reviews)
-    'courses-section.php',           // Choose Your Course (pricing)
-    'syllabus-section.php',          // Flagship Course Curriculum
-    'post-syllabus-cta-section.php', // Decision CTA (after syllabus)
-    'guarantee-section.php',         // 100% Money-Back Guarantee
-    'faq-section.php',               // FAQ
-    'free-course-section.php',       // Free 7-Day Email Course
-    'final-unlock-section.php'       // Final Unlock CTA
-);
+        'hero-section.php',
+        'research-section.php',          // NEW: research-section.php
+        'instructor-section.php',        // Meet Your Instructor
+        'testimonials-section.php',      // Success Stories (reviews)
+        'courses-section.php',           // Choose Your Course (pricing)
+        'syllabus-section.php',          // Flagship Course Curriculum
+        'post-syllabus-cta-section.php', // Decision CTA (after syllabus)
+        'guarantee-section.php',         // 100% Money-Back Guarantee
+        'faq-section.php',               // FAQ
+        'free-course-section.php',       // Free 7-Day Email Course
+        'final-unlock-section.php'       // Final Unlock CTA
+    );
     
     foreach ($components as $component) {
         $file = get_template_directory() . '/components/' . $component;
