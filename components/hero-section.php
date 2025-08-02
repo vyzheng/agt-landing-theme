@@ -55,7 +55,7 @@
         
         <div>
             <a href="#pricing" class="hero-cta-button">
-                Join Now
+                Get started for free ->
             </a>
         </div>
     </div>
