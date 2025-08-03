@@ -131,11 +131,11 @@
     }
     
     .stakes-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .stakes-subtitle {
-        font-size: 1.125rem;
+        font-size: 0.83rem;
         margin-bottom: 12px;
     }
     
@@ -154,13 +154,12 @@
     .stakes-attribution {
         padding: 10px 16px;
         margin: 16px auto 12px;
+        font-size: 0.4rem;
     }
     
-    .attribution-content {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
-    }
+    .stakes-attribution .credentials {
+    font-size: 0.3rem;
+    color: #9ca3af;}
     
     .divider-vertical {
         width: 40px;

@@ -48,7 +48,7 @@
                 <span class="stat-label">Economists' Research</span>
             </div>
             <div class="stat">
-                <span class="stat-number">Stanford</span>
+                <span class="stat-number">1 Stanford</span>
                 <span class="stat-label">Award-winning teacher</span>
             </div>
         </div>
