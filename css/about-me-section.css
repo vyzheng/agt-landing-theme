@@ -1,0 +1,280 @@
+/* About Me Section Styles */
+.about-me-section {
+    background: #ffffff;
+    padding: 80px 40px;
+}
+
+.about-me-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header - Centered */
+.about-me-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    color: #6b7280;
+    font-weight: 400;
+}
+
+/* Story Section with Photo */
+.story-section {
+    background: #fafbfc;
+    border-radius: 24px;
+    padding: 48px;
+    margin-bottom: 40px;
+}
+
+.story-wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+/* Photo Column */
+.photo-column {
+    position: sticky;
+    top: 100px;
+}
+
+.instructor-photo-card {
+    background: white;
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.instructor-photo {
+    width: 256px;
+    height: 320px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.instructor-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.instructor-name-card {
+    text-align: center;
+    padding: 16px 8px 12px;
+}
+
+.name-greeting {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.name-title {
+    font-size: 0.8125rem;
+    color: #6b7280;
+}
+
+/* Story Column */
+.story-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.story-emoji {
+    font-size: 2rem;
+}
+
+.story-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.story-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.story-subtitle {
+    font-style: italic;
+    color: #6b7280;
+    margin-bottom: 24px !important;
+}
+
+.story-content p:last-child {
+    margin-bottom: 40px;
+}
+
+/* Key Message Box */
+.key-message {
+    background: white;
+    border-left: 4px solid #667eea;
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.key-message p {
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.key-message strong {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* CTA Line */
+.story-content .cta-line {
+    color: #667eea !important;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+/* AGT Card - Premium Glow Design */
+.agt-card {
+    background: white;
+    border: 2px solid transparent;
+    background-image: 
+        linear-gradient(white, white),
+        linear-gradient(135deg, #667eea 0%, #7c3aed 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 16px;
+    padding: 24px 28px;
+    text-align: left;
+    position: relative;
+    box-shadow: 
+        0 0 30px rgba(102, 126, 234, 0.12),
+        0 8px 24px rgba(102, 126, 234, 0.08);
+    margin-top: 40px;
+}
+
+.agt-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(135deg, #667eea 0%, #7c3aed 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.agt-card p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.7;
+    margin: 0 0 12px 0;
+}
+
+.agt-card p:last-child {
+    margin: 0;
+}
+
+.agt-card strong {
+    font-weight: 600;
+    color: #374151;
+}
+
+.agt-card strong.purple-highlight {
+    color: #667eea !important;
+    font-weight: 600;
+}
+
+/* Links */
+.story-content a {
+    color: #667eea;
+    text-decoration: none;
+    border-bottom: 1px solid #667eea;
+    transition: all 0.2s ease;
+}
+
+.story-content a:hover {
+    color: #5b6de8;
+    border-bottom-color: #5b6de8;
+}
+
+/* Typography */
+.story-content strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.story-content em {
+    font-style: italic;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .about-me-section {
+        padding: 60px 20px;
+    }
+    
+    .story-section {
+        padding: 32px 24px;
+    }
+    
+    .story-wrapper {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .photo-column {
+        position: static;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .instructor-photo-card {
+        width: 100%;
+    }
+    
+    .instructor-photo {
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .story-title {
+        font-size: 1.5rem;
+    }
+    
+    .agt-card {
+        padding: 20px 24px;
+    }
+}
