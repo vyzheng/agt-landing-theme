@@ -20,7 +20,7 @@
                     <li>The perfect rating combo</li>
                     <li>Winning EC strategies</li>
                 </ul>
-                <a href="#" class="course-cta">Get Started</a>
+                <a href="https://buy.stripe.com/8x28wO0socU53sBgHhaAw02" class="course-cta">Join now</a>
             </div>
             
             <div class="course-card flagship">
@@ -37,7 +37,7 @@
                     <li>Complete application mastery</li>
                     <li>Best value for serious applicants</li>
                 </ul>
-                <a href="#" class="course-cta">Get Started</a>
+                <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="course-cta">Join now</a>
             </div>
             
             <div class="course-card">
@@ -53,7 +53,7 @@
                     <li>Apply winning frameworks</li>
                     <li>Winning and losing essays</li>
                 </ul>
-                <a href="#" class="course-cta">Get Started</a>
+                <a href="https://buy.stripe.com/00w14m3EA6vHd3b76HaAw03" class="course-cta">Get Started</a>
             </div>
         </div>
     </div>

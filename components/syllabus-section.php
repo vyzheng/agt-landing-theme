@@ -281,7 +281,7 @@ function renderChapter($chapter, $course_type) {
                 All 22 chapters to ace Ivy League admissions.
             </p>
             <div class="flagship-price">$699</div>
-            <a href="#" class="flagship-button">Get Instant Access</a>
+            <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="flagship-button">Get Instant Access</a>
             <p class="flagship-guarantee">100% satisfaction guarantee & money-back promise</p>
         </div>
 

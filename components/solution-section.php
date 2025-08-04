@@ -11,7 +11,7 @@
             <div class="solution-feature-item">
                 <span class="solution-feature-emoji">📊</span>
                 <div class="solution-feature-text">
-                    <h3>It’s a game – learn how it’s scored</h3>
+                    <h3>It’s a game – learn how to score</h3>
                     <p>They're playing blind. <strong>You won't.</strong></p>
                     <ul>
                         <li>What are you actually being scored on?</li>

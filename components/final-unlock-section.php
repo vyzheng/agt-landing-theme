@@ -7,7 +7,7 @@
             <a href="#free-course" class="final-unlock-button secondary">
                 Join Free Course
             </a>
-            <a href="#pricing" class="final-unlock-button primary">
+            <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="final-unlock-button primary">
                 Unlock Everything Now
                 <span class="final-unlock-arrow">→</span>
             </a>
