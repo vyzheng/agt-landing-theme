@@ -44,8 +44,8 @@
                 <span class="stat-label">Harvard decisions</span>
             </div>
             <div class="stat">
-                <span class="stat-number">2 Nobel</span>
-                <span class="stat-label">Economists' Research</span>
+                <span class="stat-number">1 Nobel</span>
+                <span class="stat-label">Economist's research</span>
             </div>
             <div class="stat">
                 <span class="stat-number">1 Stanford</span>

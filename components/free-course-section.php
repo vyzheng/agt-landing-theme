@@ -44,8 +44,8 @@ $syllabus_days = [
     <div class="free-course-container">
         <div class="free-course-header">
             <div class="free-course-badge">
-                <span>📧</span>
-                Still not sure?
+                <span>👀</span>
+                Sneek peek
             </div>
             <h2 class="free-course-title">Free 7-Day Email Course</h2>
             <p class="free-course-subtitle">
