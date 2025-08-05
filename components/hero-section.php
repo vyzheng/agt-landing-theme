@@ -20,7 +20,7 @@
                 <a href="#free-course" class="nav-link">Free Course</a>
             </nav>
         </div>
-        <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="header-cta">Join Now</a>
+        <a href="#pricing" class="header-cta">Join Now</a>
     </div>
     
     <div class="hero-section">
@@ -54,7 +54,7 @@
         </div>
         
         <div>
-            <a href="#pricing" class="hero-cta-button">
+            <a href="#free-course" class="hero-cta-button">
                 Get started for free ->
             </a>
         </div>
