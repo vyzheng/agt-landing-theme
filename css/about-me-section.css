@@ -1,7 +1,9 @@
-/* About Me Section Styles */
+/* About Me Section */
 .about-me-section {
-    background: #ffffff;
-    padding: 80px 40px;
+    background: #f8fafc;
+    padding: 100px 40px 80px;
+    position: relative;
+    overflow: hidden;
 }
 
 .about-me-container {
@@ -9,272 +11,221 @@
     margin: 0 auto;
 }
 
-/* Header - Centered */
-.about-me-header {
-    text-align: center;
-    margin-bottom: 64px;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #1f2937;
-    margin-bottom: 16px;
-    letter-spacing: -0.02em;
-}
-
-.section-subtitle {
-    font-size: 1.125rem;
-    color: #6b7280;
-    font-weight: 400;
-}
-
-/* Story Section with Photo */
-.story-section {
-    background: #fafbfc;
-    border-radius: 24px;
-    padding: 48px;
-    margin-bottom: 40px;
-}
-
-.story-wrapper {
+/* Split Hero Layout */
+.split-hero {
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 48px;
+    grid-template-columns: 340px 1fr;
+    gap: 80px;
     align-items: start;
 }
 
-/* Photo Column */
-.photo-column {
+/* Left Column - Profile */
+.profile-column {
     position: sticky;
-    top: 100px;
+    top: 40px;
 }
 
-.instructor-photo-card {
+.profile-card {
     background: white;
-    border-radius: 20px;
-    padding: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e5e7eb;
+    text-align: center;
 }
 
-.instructor-photo {
-    width: 256px;
-    height: 320px;
-    border-radius: 16px;
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4rem;
     color: white;
+    margin: 0 auto 24px;
 }
 
-.instructor-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-}
-
-.instructor-name-card {
-    text-align: center;
-    padding: 16px 8px 12px;
-}
-
-.name-greeting {
-    font-size: 1.125rem;
+.profile-name {
+    font-size: 1.5rem;
     font-weight: 700;
     color: #1f2937;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
-.name-title {
-    font-size: 0.8125rem;
+.profile-title {
+    font-size: 1rem;
     color: #6b7280;
+    margin-bottom: 24px;
 }
 
-/* Story Column */
-.story-header {
+.credentials-list {
+    list-style: none;
+    text-align: left;
+}
+
+.credential-item {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    font-size: 0.875rem;
+    color: #4b5563;
 }
 
-.story-emoji {
-    font-size: 2rem;
+.credential-icon {
+    color: #667eea;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Right Column - Timeline Story */
+.story-column {
+    padding-top: 20px;
 }
 
 .story-title {
-    font-size: 1.75rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 600;
     color: #1f2937;
+    margin-bottom: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
-.story-content p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #4b5563;
-    margin-bottom: 20px;
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+    padding-left: 60px;
 }
 
-.story-subtitle {
-    font-style: italic;
-    color: #6b7280;
-    margin-bottom: 24px !important;
+.timeline-line {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #667eea 0%, #7c3aed 100%);
 }
 
-.story-content p:last-child {
+.timeline-item {
+    position: relative;
     margin-bottom: 40px;
 }
 
-/* Key Message Box */
-.key-message {
-    background: white;
-    border-left: 4px solid #667eea;
-    padding: 20px 24px;
-    margin: 24px 0;
-    border-radius: 0 12px 12px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-}
-
-.key-message p {
-    font-size: 1rem;
-    color: #374151;
-    font-weight: 400;
-    line-height: 1.7;
-    margin: 0;
-}
-
-.key-message strong {
-    font-weight: 600;
-    color: #1f2937;
-}
-
-/* CTA Line */
-.story-content .cta-line {
-    color: #667eea !important;
-    font-weight: 600;
-    font-size: 1.125rem;
-}
-
-/* AGT Card - Premium Glow Design */
-.agt-card {
-    background: white;
-    border: 2px solid transparent;
-    background-image: 
-        linear-gradient(white, white),
-        linear-gradient(135deg, #667eea 0%, #7c3aed 100%);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    border-radius: 16px;
-    padding: 24px 28px;
-    text-align: left;
-    position: relative;
-    box-shadow: 
-        0 0 30px rgba(102, 126, 234, 0.12),
-        0 8px 24px rgba(102, 126, 234, 0.08);
-    margin-top: 40px;
-}
-
-.agt-card::before {
-    content: '';
+.timeline-dot {
     position: absolute;
-    inset: -2px;
+    left: -44px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background: #667eea;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 4px #f0f4ff;
+}
+
+.timeline-content {
+    background: white;
+    padding: 24px 32px;
     border-radius: 16px;
-    padding: 2px;
-    background: linear-gradient(135deg, #667eea 0%, #7c3aed 100%);
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0.5;
-    z-index: -1;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.agt-card p {
-    font-size: 1rem;
-    color: #374151;
-    line-height: 1.7;
-    margin: 0 0 12px 0;
+.timeline-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
-.agt-card p:last-child {
+.timeline-emoji {
+    font-size: 1.5rem;
+}
+
+.timeline-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
     margin: 0;
 }
 
-.agt-card strong {
-    font-weight: 600;
-    color: #374151;
+.timeline-text {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.6;
 }
 
-.agt-card strong.purple-highlight {
-    color: #667eea !important;
-    font-weight: 600;
-}
-
-/* Links */
-.story-content a {
-    color: #667eea;
-    text-decoration: none;
-    border-bottom: 1px solid #667eea;
-    transition: all 0.2s ease;
-}
-
-.story-content a:hover {
-    color: #5b6de8;
-    border-bottom-color: #5b6de8;
-}
-
-/* Typography */
-.story-content strong {
-    color: #1f2937;
+.timeline-text strong {
+    color: #4b5563;
     font-weight: 600;
 }
 
-.story-content em {
+/* Quote Item */
+.timeline-item.quote .timeline-content {
+    background: #f8fafc;
+    border-left: 3px solid #667eea;
     font-style: italic;
 }
 
-/* Mobile Responsive */
+/* Mission Box - Minimal Style */
+.mission-box {
+    padding: 32px 0;
+    text-align: center;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 48px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission-text {
+    font-size: 1.5rem;
+    color: #374151;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.mission-text strong {
+    color: #1f2937;
+    font-weight: 600;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 2px;
+}
+
+/* Mobile */
 @media (max-width: 900px) {
-    .about-me-section {
-        padding: 60px 20px;
-    }
-    
-    .story-section {
-        padding: 32px 24px;
-    }
-    
-    .story-wrapper {
+    .split-hero {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 48px;
     }
     
-    .photo-column {
+    .profile-column {
         position: static;
-        max-width: 280px;
+        max-width: 340px;
         margin: 0 auto;
     }
     
-    .instructor-photo-card {
-        width: 100%;
-    }
-    
-    .instructor-photo {
-        width: 100%;
-    }
-    
-    .section-title {
+    .story-title {
         font-size: 2rem;
     }
     
-    .story-title {
-        font-size: 1.5rem;
+    .timeline-container {
+        padding-left: 40px;
     }
     
-    .agt-card {
-        padding: 20px 24px;
+    .timeline-dot {
+        left: -32px;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .mission-text {
+        font-size: 1.25rem;
     }
 }

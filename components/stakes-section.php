@@ -13,7 +13,7 @@
             </div>
             
             <h2 class="stakes-title">
-                Ivy+ <span class="stakes-title-highlight">rewrites<span class="sparkle">✨</span></span> your future
+                How Ivy+ <span class="stakes-title-highlight">rewrites<span class="sparkle">✨</span></span> your future
             </h2>
             <p class="stakes-subtitle">
                 Compared to flagship public grads, Ivy+ students are
