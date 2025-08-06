@@ -44,11 +44,11 @@
                 <span class="stat-label">Harvard decisions</span>
             </div>
             <div class="stat">
-                <span class="stat-number">1 Nobel</span>
+                <span class="stat-number">Nobel</span>
                 <span class="stat-label">Economist's research</span>
             </div>
             <div class="stat">
-                <span class="stat-number">1 Stanford</span>
+                <span class="stat-number">Stanford</span>
                 <span class="stat-label">Award-winning teacher</span>
             </div>
         </div>

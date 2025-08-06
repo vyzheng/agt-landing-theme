@@ -6,9 +6,38 @@
     overflow: hidden;
 }
 
+/* Add subtle gradient overlay */
+.stakes-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(ellipse at top right, rgba(20, 184, 166, 0.02) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom left, rgba(127, 87, 227, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Purple wave at bottom */
+.stakes-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2314b8a6' stop-opacity='0.03'/%3E%3Cstop offset='100%25' stop-color='%237f57e3' stop-opacity='0.04'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0,150 C300,100 600,200 900,150 C1050,125 1100,175 1200,150 L1200,300 L0,300 Z' fill='url(%23grad1)'/%3E%3C/svg%3E");
+    background-size: cover;
+    z-index: 0;
+}
+
 .stakes-container {
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .stakes-header {
@@ -30,7 +59,7 @@
 .stakes-badge-line {
     height: 2px;
     width: 60px;
-    background: linear-gradient(90deg, transparent, #d1d5db, transparent);
+    background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
 }
 
 .stakes-badge-icon {
@@ -49,18 +78,33 @@
 }
 
 .stakes-title-highlight {
-    background: linear-gradient(135deg, #14b8a6 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
     color: white;
     padding: 6px 18px;
     border-radius: 8px;
     display: inline-block;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+    box-shadow: 0 4px 12px rgba(55, 100, 229, 0.18);
     font-weight: 700;
+}
+
+/* Sparkle Animation */
+/* Sparkle Animation - Subtle Shimmer */
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
 }
 
 .sparkle {
     font-size: 0.8em;
     margin-left: 6px;
+    display: inline-block;
+    animation: sparkle 2.2s ease-in-out infinite;
 }
 
 .stakes-subtitle {
@@ -92,8 +136,8 @@
 
 .stat-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 40px rgba(20, 184, 166, 0.12);
-    border-color: #14b8a6;
+    box-shadow: 0 16px 40px rgba(127, 87, 227, 0.10);
+    border-color: #7f57e3;
 }
 
 .stat-value {
@@ -126,7 +170,7 @@
 
 .attribution-name {
     font-weight: 600;
-    color: #1f2937;
+    color: #6b7280;
 }
 
 .stakes-attribution .credentials {
@@ -134,7 +178,6 @@
     margin-top: 8px;
     font-size: 0.75rem;
     color: #9ca3af;
-    font-style: italic;
 }
 
 /* Mobile */
@@ -142,16 +185,16 @@
     .stakes-section {
         padding: 60px 20px 40px;
     }
-    
+
     .stakes-title {
         font-size: 2rem;
     }
-    
+
     .stakes-stats {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .stat-card {
         flex: 1 1 100%;
     }
