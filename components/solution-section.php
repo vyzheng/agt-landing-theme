@@ -1,10 +1,13 @@
 <!-- Solution Section -->
 <section class="solution-section" id="course">
     <div class="solution-container">
-        <h2 class="solution-title">How to get in without getting lucky 👇</h2>
-        <p class="solution-subtitle">
-            Stop guessing, start winning
-        </p>
+        <div class="solution-header">
+            <div class="solution-badge">Our Solutions</div>
+            <h2 class="solution-title">How to get in without getting lucky</h2>
+            <p class="solution-subtitle">
+                Stop guessing, start winning
+            </p>
+        </div>
 
         <div class="solution-feature-grid">
             <div class="solution-feature-item">
@@ -54,7 +57,7 @@
         
         <div class="solution-bottom-cta">
             <a href="#pricing" class="solution-cta-button">
-                Start Your Journey -> 
+                Start Your Journey → 
             </a>
         </div>
     </div>

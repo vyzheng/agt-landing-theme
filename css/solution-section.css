@@ -1,12 +1,12 @@
-/* Solution Section */
+/* Solution Section - Harmonized */
 .solution-section {
-    background: #ffffff;
-    padding: 120px 40px 100px; /* keep top/left/right */
+    background: #f9fafb;
+    padding: 60px 40px 40px;
     position: relative;
     overflow: hidden;
 }
 
-/* Background decoration - matching stakes section style */
+/* Subtle background gradient - matching stakes section */
 .solution-section::before {
     content: '';
     position: absolute;
@@ -27,26 +27,50 @@
     z-index: 1;
 }
 
-/* Title */
+/* Header with badge */
+.solution-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Our Solutions Badge */
+.solution-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(55, 100, 229, 0.18);
+}
+
+.solution-badge::after {
+    content: '✨';
+    font-size: 1rem;
+}
+
+/* Title - matching other section styles */
 .solution-title {
     font-size: 3rem;
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: #1f2937;
-    text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 }
 
 .solution-subtitle {
     font-size: 1.25rem;
     color: #6b7280;
-    text-align: center;
-    margin-bottom: 64px;
     font-weight: 400;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 /* Feature Grid */
@@ -54,17 +78,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
-    max-width: 1050px;
-    margin: 0 auto 80px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
 }
 
 .solution-feature-item {
-    background: #ffffff;
-    padding: 32px 24px 38px 32px;  /* reduced bottom padding */
-    border-radius: 16px;
+    background: #fafbfc;
+    padding: 36px 56px;
+    border-radius: 24px;
     border: 1px solid #e5e7eb;
-    transition: all 0.2s ease;
-    cursor: default;
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -72,152 +95,120 @@
 /* Hover effect */
 .solution-feature-item:hover {
     transform: translateY(-4px);
-    border-color: #d1d5db;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-color: #667eea;
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
 }
 
 .solution-feature-text h3 {
-    font-size: 1.3rem;
-    font-weight: 650;
-    margin-bottom: 12px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
     color: #1f2937;
-    line-height: 1.5;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
 }
 
 .solution-feature-emoji {
-    font-size: 1.3rem;
-    line-height: 1.5;
+    font-size: 1.75rem;
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 10px;
 }
 
 .solution-feature-text ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-left: 12px;
 }
 
 .solution-feature-text li {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 6px;
-    font-size: 1rem;
-    color: #4b5563; /* darker gray */
-    line-height: 1.4;
-    transition: color 0.2s ease;
+    position: relative;
+    padding-left: 44px;
+    margin-bottom: 12px;
+    font-size: 1.0625rem;
+    color: #4b5563;
+    line-height: 1.5;
 }
 
 .solution-feature-text li:last-child {
-    margin-bottom: 0; /* prevents large gap */
+    margin-bottom: 0;
 }
 
-.solution-feature-item:hover .solution-feature-text li {
-    color: #4b5563;
-}
-
-/* Checkmark */
-.solution-feature-text li:before {
-    content: "✅";
+/* Custom bullet using ::before */
+.solution-feature-text li::before {
+    content: '→';
+    position: absolute;
+    left: 16px;
     color: #667eea;
-    font-weight: bold;
-    font-size: 1rem;
-    flex-shrink: 0;
-    margin-left: 20px;
-}
-
-/* Optional: description text */
-.solution-feature-description {
-    color: #6b7280;
-    line-height: 1.6;
-    margin-bottom: 12px;
+    font-weight: 600;
     font-size: 1.125rem;
 }
 
 /* CTA Section */
 .solution-bottom-cta {
     text-align: center;
-    position: relative;
 }
 
 .solution-cta-button {
-    background: #667eea;
+    background: #3764e5;
     color: white;
-    padding: 16px 32px;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
+    padding: 18px 36px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 12px;
     transition: all 0.2s ease;
     display: inline-block;
+    box-shadow: 0 4px 16px rgba(55, 100, 229, 0.18);
 }
 
 .solution-cta-button:hover {
-    background: #5b6de8;
+    background: #2d50d3;
     transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(55, 100, 229, 0.25);
 }
-
-/* Floating animations - disabled
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-2px); }
-}
-
-.solution-feature-item:nth-child(odd) {
-    animation: float 10s ease-in-out infinite;
-}
-
-.solution-feature-item:nth-child(even) {
-    animation: float 10s ease-in-out infinite;
-    animation-delay: 5s;
-}
-*/
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .solution-section {
-        padding: 80px 20px 60px;
+        padding: 60px 20px;
     }
 
-    .solution-section::before {
-        width: 400px;
-        height: 400px;
-        top: -30%;
-        right: -50%;
+    .solution-header {
+        margin-bottom: 48px;
     }
 
     .solution-title {
-        font-size: 2.25rem;
+        font-size: 2rem;
         margin-bottom: 12px;
     }
 
     .solution-subtitle {
         font-size: 1.125rem;
-        margin-bottom: 48px;
     }
 
     .solution-feature-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 48px;
     }
 
     .solution-feature-item {
-        padding: 28px 24px 20px 24px; /* reduce bottom on mobile too */
-    }
-
-    .solution-feature-emoji {
-        font-size: 1.125rem;
+        padding: 40px 32px;
     }
 
     .solution-feature-text h3 {
-        font-size: 1.125rem;
+        font-size: 1.375rem;
+        margin-bottom: 20px;
     }
 
     .solution-feature-text li {
-        font-size: 0.875rem;
+        font-size: 1rem;
+        padding-left: 36px;
+    }
+
+    .solution-feature-text li::before {
+        left: 12px;
     }
 
     .solution-cta-button {
