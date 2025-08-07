@@ -176,25 +176,38 @@
     text-align: center;
     border-top: 1px solid #e5e7eb;
     margin-top: 48px;
-    max-width: 800px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .mission-text {
     font-size: 1.5rem;
-    color: #374151;
+    color: #1f2937;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.8;
     margin: 0;
 }
 
 .mission-text strong {
-    color: #1f2937;
-    font-weight: 600;
-    border-bottom: 2px solid #667eea;
-    padding-bottom: 2px;
+  position: relative;
+  font-weight: 600;
+  color: #1f2937;
+
+  background-image: linear-gradient(
+    135deg,
+    #facc15,
+    #f472b6,
+    #7f57e3
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 4px;     /* thicker for round feel */
+  background-position: 0 95%;    /* closer to baseline */
+  padding-bottom: 4px;
+  border-radius: 20px;         /* softens the corners of the underline visually */
 }
+
+
 
 /* Mobile */
 @media (max-width: 900px) {

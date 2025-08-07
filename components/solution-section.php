@@ -3,7 +3,7 @@
     <div class="solution-container">
         <h2 class="solution-title">How to get in without getting lucky 👇</h2>
         <p class="solution-subtitle">
-            Stop guessing. Start winning
+            Stop guessing, start winning
         </p>
 
         <div class="solution-feature-grid">
@@ -42,7 +42,7 @@
             
             <div class="solution-feature-item">
                 <div class="solution-feature-text">
-                    <h3><span class="solution-feature-emoji">💡</span> Get 1-1 help, only when you need it</h3>
+                    <h3><span class="solution-feature-emoji">💡</span> 1-1, only when you need it</h3>
                     <ul>
                         <li>Work directly with Dr. Vivian.</li>
                         <li>1 session or 10—no contracts, no pressure</li>
@@ -54,7 +54,7 @@
         
         <div class="solution-bottom-cta">
             <a href="#pricing" class="solution-cta-button">
-                Start Your Journey
+                Start Your Journey -> 
             </a>
         </div>
     </div>
