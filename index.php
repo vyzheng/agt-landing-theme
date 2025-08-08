@@ -9,25 +9,29 @@
     <title>Admissions Game Theory</title>
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" type="image/png">
     <?php
-    // Load CSS files
+    // Load CSS files with versioning (based on file modified time)
     $css_files = array(
         'hero-section.css',
-        //'research-section.css',          // NEW: research-section.css
+        //'research-section.css',
         'stakes-section.css',
         'solution-section.css',
-        'testimonials-section.css',      // This CSS file covers both testimonial sections
+        'testimonials-section.css',
         'courses-section.css',
         'about-me-section.css',
         'syllabus-section.css',
         'faq-section.css',
         'free-course-section.css',
         'guarantee-section.css',
-        'post-syllabus-cta-section.php', // Decision CTA (after syllabus)
         'final-unlock-section.css'
     );
-    
+
+    $css_dir = get_template_directory() . '/css/';
+    $css_url = get_template_directory_uri() . '/css/';
+
     foreach ($css_files as $css) {
-        echo '<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/' . $css . '">';
+        $file_path = $css_dir . $css;
+        $version = file_exists($file_path) ? filemtime($file_path) : time(); // fallback to current time if missing
+        echo '<link rel="stylesheet" href="' . $css_url . $css . '?v=' . $version . '">' . "\n";
     }
     ?>
 </head>
@@ -36,21 +40,20 @@
     // Include all components
     $components = array(
         'hero-section.php',
-        //'research-section.php',              // NEW: research-section.php
-        'stakes-section.php',                  // Stakes Section
-        'solution-section.php',                // Solution Section
-        'about-me-section.php',                // Meet Your Instructor
-        'ethan-testimonial-section.php',       // Ethan's Success Story (Student)
-        'yifei-testimonial-section.php',       // Yifei's Success Story (Parent)
-        'courses-section.php',                 // Choose Your Course (pricing)
-        'syllabus-section.php',                // Flagship Course Curriculum
-        'post-syllabus-cta-section.php',       // Decision CTA (after syllabus)
-        'guarantee-section.php',               // 100% Money-Back Guarantee
-        'faq-section.php',                     // FAQ
-        'free-course-section.php',             // Free 7-Day Email Course
-        'final-unlock-section.php'             // Final Unlock CTA
+        //'research-section.php',
+        'stakes-section.php',
+        'solution-section.php',
+        'about-me-section.php',
+        'ethan-testimonial-section.php',
+        'yifei-testimonial-section.php',
+        'courses-section.php',
+        'syllabus-section.php',
+        'guarantee-section.php',
+        'faq-section.php',
+        'free-course-section.php',
+        'final-unlock-section.php'
     );
-    
+
     foreach ($components as $component) {
         $file = get_template_directory() . '/components/' . $component;
         if (file_exists($file)) {
@@ -58,10 +61,23 @@
         }
     }
     ?>
-    
-    <!-- Load JS files -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/syllabus-section.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/faq-section.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/free-course-section.js"></script>
+
+    <!-- Load JS files with versioning -->
+    <?php
+    $js_files = array(
+        'syllabus-section.js',
+        'faq-section.js',
+        'free-course-section.js'
+    );
+
+    $js_dir = get_template_directory() . '/js/';
+    $js_url = get_template_directory_uri() . '/js/';
+
+    foreach ($js_files as $js) {
+        $file_path = $js_dir . $js;
+        $version = file_exists($file_path) ? filemtime($file_path) : time();
+        echo '<script src="' . $js_url . $js . '?v=' . $version . '"></script>' . "\n";
+    }
+    ?>
 </body>
 </html>

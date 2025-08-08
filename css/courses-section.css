@@ -1,47 +1,63 @@
-/* Courses Section Styles */
+/* Courses Section */
 .courses-section {
     background: white;
     padding: 80px 40px;
 }
 
 .courses-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-/* Reuse section title styles from content section */
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
 .section-title {
     font-size: 2.5rem;
     font-weight: 600;
-    text-align: center;
-    margin-bottom: 16px;
     color: #1f2937;
+    margin-bottom: 16px;
     letter-spacing: -0.02em;
 }
 
 .section-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 40px;
     text-align: center;
-    font-size: 1.125rem;
-    color: #6b7280;
-    margin-bottom: 64px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+/* Course Cards - Compact Grid */
 .courses-grid {
     display: grid;
-    grid-template-columns: 1fr 1.3fr 1fr;
-    gap: 32px;
-    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
 }
 
 .course-card {
     background: white;
-    padding: 40px 32px;
-    border-radius: 20px;
+    padding: 32px 28px;
+    border-radius: 16px;
     border: 2px solid #e5e7eb;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     text-align: center;
     position: relative;
 }
@@ -53,7 +69,6 @@
 }
 
 .course-card.flagship {
-    padding: 48px 40px;
     border: 3px solid #667eea;
     box-shadow: 0 15px 30px rgba(102, 126, 234, 0.2);
     transform: scale(1.05);
@@ -68,7 +83,7 @@
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(135deg, #667eea 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
     color: white;
     padding: 8px 20px;
     border-radius: 20px;
@@ -77,77 +92,77 @@
 }
 
 .course-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 16px;
     display: block;
 }
 
 .course-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.course-tagline {
+    font-size: 0.875rem;
+    color: #374151;
+    font-weight: 500;
     margin-bottom: 12px;
 }
 
 .course-price {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 800;
     color: #667eea;
-    margin-bottom: 20px;
-}
-
-.course-description {
-    color: #6b7280;
-    line-height: 1.6;
-    margin-bottom: 24px;
-    font-size: 0.95rem;
+    margin-bottom: 16px;
 }
 
 .course-features {
     list-style: none;
     text-align: left;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     padding: 0;
 }
 
 .course-features li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: #6b7280;
+    margin-bottom: 6px;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.4;
 }
 
 .course-features li::before {
-    content: '→';
-    color: #667eea;
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3764e5;
     font-weight: bold;
-    font-size: 1rem;
 }
 
 .course-cta {
-    background: #667eea;
+    background: #3764e5;
     color: white;
-    padding: 16px 32px;
-    border-radius: 12px;
+    padding: 14px 28px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9375rem;
     transition: all 0.2s ease;
     display: inline-block;
     width: 100%;
 }
 
 .course-cta:hover {
-    background: #5b6de8;
+    background: #3764e5;
     transform: translateY(-1px);
 }
 
 .flagship .course-cta {
-    background: linear-gradient(135deg, #667eea 0%, #7c3aed 100%);
-    font-size: 1.1rem;
-    padding: 18px 36px;
+    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
+    padding: 16px 32px;
 }
 
 .flagship .course-cta:hover {
@@ -155,23 +170,226 @@
     box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
 }
 
-/* Mobile Responsive */
+/* 1-on-1 Section */
+.one-on-one-section {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 64px;
+}
+
+.one-on-one-section .section-subtitle {
+    margin-bottom: 24px;
+}
+
+.one-on-one-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* Info Pills */
+.info-pills {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.info-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.info-pill-icon {
+    font-size: 1rem;
+}
+
+.info-pill strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+/* Session Grid */
+.session-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.session-card {
+    background: #fafbfc;
+    border-radius: 16px;
+    padding: 32px;
+    border: 2px solid #e5e7eb;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.session-card:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.session-card.bundle {
+    background: white;
+    border-color: #667eea;
+}
+
+.bundle-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.session-icon {
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.session-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 4px;
+}
+
+.session-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 16px;
+}
+
+.session-sessions {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.session-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.session-features li {
+    font-size: 0.8125rem;
+    color: #6b7280;
+    margin-bottom: 8px;
+    padding-left: 0;
+    position: relative;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+/* Single session uses arrows */
+.session-card:not(.bundle) .session-features li {
+    padding-left: 16px;
+}
+
+.session-card:not(.bundle) .session-features li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* Bundles use numbers only */
+.feature-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: #f0f4ff;
+    color: #667eea;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.session-cta {
+    background: #667eea;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    transition: all 0.2s ease;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+.session-cta:hover {
+    background: #5b6de8;
+    transform: translateY(-1px);
+}
+
+.bundle .session-cta {
+    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
+}
+
+.bundle .session-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Mobile */
 @media (max-width: 768px) {
     .courses-section {
         padding: 60px 20px;
     }
-    
-    .courses-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
+
+    .section-title {
+        font-size: 2rem;
     }
-    
+
+    .courses-grid,
+    .session-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
     .course-card.flagship {
         transform: none;
         order: -1;
     }
-    
+
     .course-card.flagship:hover {
         transform: translateY(-4px);
+    }
+
+    .info-pills {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        max-width: 400px;
+        margin: 0 auto 32px;
+    }
+
+    .one-on-one-title {
+        font-size: 1.75rem;
     }
 }
