@@ -1,49 +1,25 @@
-/* Success Stories Section - Redesigned */
+/* Compact Premium Testimonials Section */
 .testimonials-section {
-    background: #ffffff;
+    background: linear-gradient(180deg, #ffffff 0%, #fafbfc 100%);
     padding: 80px 40px;
     position: relative;
-    overflow: hidden;
-}
-
-/* Subtle background pattern */
-.testimonials-section::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 800px;
-    height: 800px;
-    background: radial-gradient(circle, rgba(102, 126, 234, 0.03) 0%, transparent 70%);
-    border-radius: 50%;
-}
-
-.testimonials-section::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -20%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(124, 58, 237, 0.03) 0%, transparent 70%);
-    border-radius: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .testimonials-container {
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    width: 100%;
 }
 
-/* Section Header */
+/* Header */
 .testimonials-header {
     text-align: center;
     margin-bottom: 64px;
-    position: relative;
 }
 
-/* Success Stories Badge - Updated with new gradient */
 .header-badge {
     display: inline-flex;
     align-items: center;
@@ -55,6 +31,7 @@
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 24px;
+    letter-spacing: 0.02em;
     box-shadow: 0 4px 12px rgba(55, 100, 229, 0.18);
 }
 
@@ -67,452 +44,334 @@
     font-size: 2.5rem;
     font-weight: 600;
     color: #1f2937;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     letter-spacing: -0.02em;
     line-height: 1.2;
-    position: relative;
 }
 
-/* Highlight effect on "impressive" - Gradient Text */
 .testimonials-title .highlight-word {
     background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
-    display: inline-block;
 }
 
 .testimonials-subtitle {
     font-size: 1.125rem;
     color: #6b7280;
     font-weight: 400;
-    max-width: 700px;
-    margin: 0 auto;
 }
 
-/* Visual Wrapper for All Three Components */
-.testimonial-story-wrapper {
-    background: linear-gradient(to bottom, #fafbfc 0%, #ffffff 100%);
-    border-radius: 32px;
-    padding: 4px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
-    border: 1px solid #e5e7eb;
-    position: relative;
-    margin-bottom: 48px;
-}
-
-/* Story Introduction Section */
-.story-intro-section {
-    background: white;
-    border-radius: 28px;
-    padding: 48px;
+/* Layout */
+.testimonial-wrapper {
     display: grid;
-    grid-template-columns: 1fr 340px;
-    gap: 64px;
-    align-items: start;
+    grid-template-columns: 300px 1fr;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+/* Profile Card */
+.profile-card {
+    background: white;
+    border-radius: 24px;
+    padding: 40px 32px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f3f4f6;
     position: relative;
     overflow: hidden;
-    margin-bottom: 4px;
 }
 
-/* Gradient accent border */
-.story-intro-section::before {
+.profile-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #667eea 0%, #7c3aed 50%, #667eea 100%);
-    background-size: 200% 100%;
-    animation: shimmer 3s ease-in-out infinite;
+    background: linear-gradient(90deg, #3471eb 0%, #7f57e3 100%);
 }
 
-@keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
-}
-
-/* Design Elements */
-.story-intro-section::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(circle, rgba(102, 126, 234, 0.05) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-/* Text Content */
-.testimonial-text {
-    position: relative;
-}
-
-/* Category Badge - Updated with new gradient */
-.testimonial-category {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 32px;
-    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
-    padding: 6px 16px 6px 12px;
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 12px rgba(55, 100, 229, 0.18);
-}
-
-.category-dot {
-    width: 16px;
-    height: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.875rem;
-    filter: brightness(1.2);
-}
-
-.category-dot::before {
-    content: '✨';
-}
-
-.category-label {
-    font-size: 0.875rem;
-    color: white;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* Decorative dots pattern */
-.testimonial-category::before {
-    content: '';
-    position: absolute;
-    left: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 60px;
-    background-image: radial-gradient(circle, #e5e7eb 2px, transparent 2px);
-    background-size: 10px 20px;
-    opacity: 0.5;
-}
-
-/* Story Content */
-.testimonial-story {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #374151;
-}
-
-.testimonial-story p {
-    margin-bottom: 20px;
-}
-
-.testimonial-story p:last-child {
-    margin-bottom: 0;
-}
-
-.testimonial-story strong {
-    color: #111827;
-    font-weight: 600;
-}
-
-/* Quote Section - Full Width */
-.testimonial-quote-section {
-    padding: 0 48px 32px;
-    margin-bottom: 4px;
-    position: relative;
-}
-
-.quote-label {
-    font-size: 0.875rem;
-    color: #6b7280;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    text-align: center;
-    position: relative;
-}
-
-/* Quote Box Design Elements */
-.quote-box {
-    background: linear-gradient(135deg, #e8e0ff 0%, #fef9e6 100%);
-    border-radius: 24px;
-    padding: 40px 56px;
-    position: relative;
-    text-align: left;
-    border: 1px solid #f3f4f6;
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.08);
-    overflow: hidden;
-}
-
-/* Add celebratory confetti pattern */
-.quote-box::before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    right: -50px;
-    bottom: -50px;
-    background-image: 
-        radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(254, 249, 230, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-/* Add subtle top border accent */
-.quote-box::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 30%;
-    right: 30%;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, #667eea, #7c3aed, transparent);
-    opacity: 0.6;
-}
-
-.quote-mark {
-    position: absolute;
-    top: 20px;
-    left: 32px;
-    font-size: 80px;
-    color: #667eea;
-    opacity: 0.2;
-    font-family: Georgia, serif;
-    line-height: 1;
-}
-
-.quote-mark-end {
-    position: absolute;
-    bottom: 20px;
-    right: 32px;
-    font-size: 80px;
-    color: #667eea;
-    opacity: 0.2;
-    font-family: Georgia, serif;
-    line-height: 1;
-    transform: rotate(180deg);
-}
-
-.quote-text {
-    font-size: 1rem;
-    color: #1f2937;
-    line-height: 1.6;
-    position: relative;
-    z-index: 1;
-    padding: 0 40px;
-}
-
-.quote-text p {
-    margin-bottom: 14px;
-}
-
-.quote-text p:last-child {
-    margin-bottom: 0;
-}
-
-.quote-text strong {
-    color: #111827;
-    font-weight: 600;
-}
-
-/* Outcome Section - Full Width */
-.testimonial-outcome-section {
-    padding: 0 48px 48px;
-}
-
-/* Outcome Section Design */
-.outcome-box {
-    background: white;
-    border-radius: 24px;
-    padding: 40px 56px;
-    position: relative;
-    border: 1px solid #f3f4f6;
-}
-
-.outcome-text {
-    font-size: 1.125rem;
-    color: #111827;
-    font-weight: 400;
-    line-height: 1.5;
-    position: relative;
-    z-index: 1;
-}
-
-.outcome-text strong {
-    font-weight: 700;
-    color: #030712;
-}
-
-/* Profile Card */
-.testimonial-profile {
-    position: sticky;
-    top: 40px;
-}
-
-.profile-inner {
-    background: white;
-    border-radius: 24px;
-    padding: 40px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
-    border: 1px solid #e5e7eb;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Profile gradient background */
-.profile-pattern {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 120px;
+.profile-avatar {
+    width: 100px;
+    height: 100px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    opacity: 1;
-}
-
-.profile-emoji {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    background: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
-    margin: 60px auto 24px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    border: 4px solid white;
-    z-index: 1;
-}
-
-.profile-info {
-    position: relative;
-    z-index: 1;
+    font-size: 3rem;
+    margin: 0 auto 24px;
+    box-shadow: 0 12px 32px rgba(102, 126, 234, 0.15);
 }
 
 .profile-name {
     font-size: 1.375rem;
     font-weight: 700;
     color: #111827;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
-.profile-role {
-    font-size: 0.9375rem;
+.profile-journey {
+    font-size: 0.875rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.profile-current {
+    font-size: 0.875rem;
     color: #374151;
-    margin-bottom: 20px;
-    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 24px;
 }
 
 .profile-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #f0f4ff;
+    background: white;
     color: #667eea;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 600;
-    margin-top: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-/* Profile decoration */
-.profile-decoration {
+/* Story Card */
+.story-card {
+    background: white;
+    border-radius: 24px;
+    padding: 48px 56px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f3f4f6;
+    position: relative;
+}
+
+.story-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 32px;
+}
+
+.story-intro {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 48px;
+}
+
+/* Timeline */
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
     position: absolute;
-    bottom: -40px;
-    right: -40px;
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
-    border-radius: 50%;
+    top: 35px;
+    left: 15%;
+    right: 15%;
+    height: 2px;
+    background: linear-gradient(90deg, #e5e7eb 0%, #d1d5db 50%, #e5e7eb 100%);
+    z-index: 0;
 }
 
-/* Mobile Responsive */
-@media (max-width: 900px) {
+.timeline-phase {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Square icons with gradient background */
+.phase-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #f0f4ff 0%, #fef9e6 100%);
+    border: 2px solid transparent;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease;
+}
+
+.timeline-phase:hover .phase-icon {
+    background: white;
+    border-color: #667eea;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+}
+
+.phase-label {
+    font-size: 0.75rem;
+    color: #667eea;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+}
+
+.phase-text {
+    font-size: 0.875rem;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.phase-text strong {
+    color: #111827;
+    font-weight: 600;
+}
+
+/* Quote Box */
+.quote-box {
+    background: rgba(102, 126, 234, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 24px 32px;
+    margin-bottom: 32px;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    position: relative;
+}
+
+.quote-text {
+    font-size: 0.9375rem;
+    color: #374151;
+    line-height: 1.7;
+    font-style: italic;
+    padding-bottom: 16px;
+}
+
+.quote-text strong {
+    color: #111827;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Expand link */
+.expand-link {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0 auto;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 12px 0 0 0;
+}
+
+.expand-link:hover {
+    color: #5b6de8;
+}
+
+.expand-link svg {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.2s ease;
+}
+
+.expand-link.expanded svg {
+    transform: rotate(180deg);
+}
+
+/* Full letter inside quote box */
+.full-letter {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.full-letter .expand-link {
+    border-top: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.full-letter .letter-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-top: 0;
+}
+
+.full-letter.show .letter-content {
+    max-height: 800px;
+    padding-top: 16px;
+}
+
+.letter-content p {
+    font-size: 0.875rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    font-style: normal;
+}
+
+.letter-content p:last-child {
+    margin-bottom: 0;
+}
+
+.letter-content strong {
+    color: #111827;
+    font-weight: 600;
+}
+
+/* Story ending */
+.story-ending {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.story-ending strong {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     .testimonials-section {
+        min-height: auto;
         padding: 60px 20px;
     }
-    
-    .testimonials-title {
-        font-size: 2rem;
-    }
-    
-    .testimonials-subtitle {
-        font-size: 1rem;
-    }
-    
-    .testimonial-story-wrapper {
-        padding: 2px;
-        border-radius: 24px;
-    }
-    
-    .testimonial-story-wrapper::before {
-        display: none;
-    }
-    
-    .story-intro-section {
+
+    .testimonial-wrapper {
         grid-template-columns: 1fr;
-        padding: 32px 24px;
-        gap: 40px;
-        border-radius: 22px;
+        gap: 24px;
     }
-    
-    .testimonial-profile {
-        position: static;
-        max-width: 340px;
+
+    .profile-card {
+        max-width: 360px;
         margin: 0 auto;
     }
-    
-    .testimonial-quote-section,
-    .testimonial-outcome-section {
-        padding: 0 24px;
+
+    .story-card {
+        padding: 32px 28px;
     }
-    
-    .testimonial-outcome-section {
-        padding-bottom: 32px;
+
+    .timeline {
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
-    
-    .quote-box,
-    .outcome-box {
-        padding: 28px 24px;
-        border-radius: 20px;
+
+    .timeline::before {
+        display: none;
     }
-    
-    .quote-mark,
-    .quote-mark-end {
-        font-size: 48px;
-        top: 16px;
-        left: 20px;
-    }
-    
-    .quote-mark-end {
-        bottom: 16px;
-        right: 20px;
-    }
-    
-    .quote-text {
-        padding: 0 20px;
-        font-size: 0.9375rem;
-    }
-    
-    .outcome-text {
-        font-size: 1rem;
-    }
-    
-    .testimonial-story {
-        font-size: 0.9375rem;
+
+    .testimonials-title {
+        font-size: 2rem;
     }
 }

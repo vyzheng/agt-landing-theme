@@ -2,71 +2,81 @@
 <section class="testimonials-section" id="yifei-story">
     <div class="testimonials-container">
         <div class="testimonials-header">
-            <div class="header-badge">Success Stories</div>
+            <div class="header-badge">Parent Success Story</div>
             <h2 class="testimonials-title">Even a Caltech PhD and tech CEO felt <span class="highlight-word">lost</span></h2>
-            <p class="testimonials-subtitle">Until we brought Nobel-level economic research and 150,000 Harvard applications to the table</p>
+            <p class="testimonials-subtitle">Until we brought data-driven clarity to the admissions game</p>
         </div>
 
-        <!-- Wrapper for all three components -->
-        <div class="testimonial-story-wrapper">
-            <!-- Story Introduction with Profile -->
-            <div class="story-intro-section">
-                <div class="testimonial-text">
-                    <div class="testimonial-category">
-                        <div class="category-dot"></div>
-                        <span class="category-label">From Confusion to Clarity</span>
-                    </div>
+        <div class="testimonial-wrapper">
+            <div class="profile-card">
+                <div class="profile-avatar">👨‍💼</div>
+                <h3 class="profile-name">Yifei</h3>
+                <p class="profile-journey">Caltech PhD, Founder-CEO</p>
+                <p class="profile-current"><strong>Parent of:</strong> 5-year-old Guangyu</p>
+                <div class="profile-badge">📚 AGT Parent</div>
+            </div>
 
-                    <div class="testimonial-story">
-                        <p>Yifei holds a PhD in Economics from Caltech. He's the founder-CEO of a multimillion-dollar company and a former Engineering Director at Outreach. His wife is an Oracle engineer. They're <strong>high-achieving, deeply educated</strong> — and proud parents to 5-year-old Guangyu.</p>
-                        
-                        <p>But when it came to planning Guangyu's long-term admissions path, they felt <strong>completely lost</strong>.</p>
-                        
-                        <p>Public or private school? Math Olympiads or piano? Early specialization or broad exploration?</p>
-                        
-                        <p>They'd grown up within the East Asian education system — one with totally different rules, expectations, and timelines. The U.S. college admissions process felt like a <strong>black box</strong>. And between running a company and managing full-time tech careers, they didn't have time for trial and error.</p>
-                        
-                        <p>That's where <strong>Admissions Game Theory</strong> came in.</p>
-                    </div>
-                </div>
-
-                <div class="testimonial-profile">
-                    <div class="profile-inner">
-                        <div class="profile-pattern"></div>
-                        <div class="profile-emoji">👨‍💼</div>
-                        <div class="profile-info">
-                            <h4 class="profile-name">Yifei</h4>
-                            <p class="profile-role">Caltech PhD<br>Founder-CEO of Knitwise</p>
+            <div class="story-card">
+                <h3 class="story-title">From Confusion to Clarity</h3>
+                
+                <p class="story-intro">
+                    Despite their impressive credentials—PhD, tech CEO, Oracle engineer spouse—Yifei and his wife felt 
+                    completely unprepared to navigate the U.S. college admissions system for their 5-year-old son.
+                </p>
+                
+                <div class="timeline">
+                    <div class="timeline-phase">
+                        <div class="phase-icon">😰</div>
+                        <div class="phase-label">The Challenge</div>
+                        <div class="phase-text">
+                            PhD + CEO = <strong>Still lost</strong> about U.S. admissions
                         </div>
-                        <div class="profile-badge">🎓 Parent Success</div>
-                        <div class="profile-decoration"></div>
+                    </div>
+                    
+                    <div class="timeline-phase">
+                        <div class="phase-icon">📊</div>
+                        <div class="phase-label">The Solution</div>
+                        <div class="phase-text">
+                            <strong>150,000 applications</strong> data + clear frameworks
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-phase">
+                        <div class="phase-icon">🎯</div>
+                        <div class="phase-label">The Result</div>
+                        <div class="phase-text">
+                            From <strong>"total noobs"</strong> to confidently navigating
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Full Width Quote Section -->
-            <div class="testimonial-quote-section">
-                <div class="quote-label">Here's what Yifei shared about their experience:</div>
                 <div class="quote-box">
-                    <span class="quote-mark">"</span>
-                    <div class="quote-text">
-                        <p>Dr. Vivian took my wife and me from <strong>total noobs</strong> about U.S. college admissions to being <strong>surprisingly well-informed</strong>. It was a one-stop shop for us. For the first time, we understood how elite colleges actually evaluate applications — and how those ratings map to real admissions probabilities.</p>
-                        
-                        <p>Seeing how <strong>150,000 real Harvard applications</strong> are distributed across six admissions cycles gave us a huge sense of clarity. I especially loved the <strong>'grid search' idea</strong> — evaluating all the possible extracurricular paths and finding the right balance between exploring broadly and focusing deeply. It gave us a concrete framework to co-create Guangyu's journey in a way that fits both his interests <em>and</em> the future landscape of AI.</p>
-                        
-                        <p>Even after finishing the course, they still revisit the tools and resources — again and again.</p>
-                        
-                        <p>Honestly, the <strong>$699 for the flagship course</strong> was one of the <strong>highest-ROI purchases</strong> we've made as parents. I'd recommend it to any family who wants to shortcut the long learning curve of U.S. college admissions.</p>
-                    </div>
-                    <span class="quote-mark-end">"</span>
-                </div>
-            </div>
+                    <p class="quote-text">
+                        "The $699 flagship course was one of the <strong>highest-ROI purchases</strong> we've made as parents."
+                    </p>
 
-            <!-- Full Width Outcome Section -->
-            <div class="testimonial-outcome-section">
-                <div class="outcome-box">
-                    <div class="outcome-text">Today, Yifei and his wife have a <strong>clear roadmap for Guangyu's educational journey</strong> — no more guesswork, no more anxiety. They're confidently navigating the American education system with the same strategic thinking that built their successful careers.</div>
+                    <div class="full-letter">
+                        <button class="expand-link" onclick="toggleLetter(this)">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                            Expand to read the full testimonial
+                        </button>
+                        <div class="letter-content">
+                            <p>Dr. Vivian took my wife and me from <strong>total noobs</strong> about U.S. college admissions to being <strong>surprisingly well-informed</strong>. It was a one-stop shop for us. For the first time, we understood how elite colleges actually evaluate applications — and how those ratings map to real admissions probabilities.</p>
+                            
+                            <p>Seeing how <strong>150,000 real Harvard applications</strong> are distributed across six admissions cycles gave us a huge sense of clarity. I especially loved the <strong>'grid search' idea</strong> — evaluating all the possible extracurricular paths and finding the right balance between exploring broadly and focusing deeply. It gave us a concrete framework to co-create Guangyu's journey in a way that fits both his interests <em>and</em> the future landscape of AI.</p>
+                            
+                            <p>Even after finishing the course, we still revisit the tools and resources — again and again.</p>
+                            
+                            <p>Honestly, the <strong>$699 for the flagship course</strong> was one of the <strong>highest-ROI purchases</strong> we've made as parents. I'd recommend it to any family who wants to shortcut the long learning curve of U.S. college admissions.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <p class="story-ending">
+                    Today, Yifei and his wife have a clear roadmap for their son's educational journey—<strong>no more guesswork, no more anxiety.</strong>
+                </p>
             </div>
         </div>
     </div>
