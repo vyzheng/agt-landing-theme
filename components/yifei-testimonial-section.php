@@ -8,14 +8,6 @@
         </div>
 
         <div class="testimonial-wrapper">
-            <div class="profile-card">
-                <div class="profile-avatar">👨‍💼</div>
-                <h3 class="profile-name">Yifei</h3>
-                <p class="profile-journey">Caltech PhD, Founder-CEO</p>
-                <p class="profile-current"><strong>Parent of:</strong> 5-year-old Guangyu</p>
-                <div class="profile-badge">📚 AGT Parent</div>
-            </div>
-
             <div class="story-card">
                 <h3 class="story-title">From Confusion to Clarity</h3>
                 
@@ -63,13 +55,13 @@
                             Expand to read the full testimonial
                         </button>
                         <div class="letter-content">
-                            <p>Dr. Vivian took my wife and me from <strong>total noobs</strong> about U.S. college admissions to being <strong>surprisingly well-informed</strong>. It was a one-stop shop for us. For the first time, we understood how elite colleges actually evaluate applications — and how those ratings map to real admissions probabilities.</p>
+                            <p>"Dr. Vivian took my wife and me from <strong>total noobs</strong> about U.S. college admissions to being <strong>surprisingly well-informed</strong>. It was a one-stop shop for us. For the first time, we understood how elite colleges actually evaluate applications — and how those ratings map to real admissions probabilities.</p>
                             
                             <p>Seeing how <strong>150,000 real Harvard applications</strong> are distributed across six admissions cycles gave us a huge sense of clarity. I especially loved the <strong>'grid search' idea</strong> — evaluating all the possible extracurricular paths and finding the right balance between exploring broadly and focusing deeply. It gave us a concrete framework to co-create Guangyu's journey in a way that fits both his interests <em>and</em> the future landscape of AI.</p>
                             
                             <p>Even after finishing the course, we still revisit the tools and resources — again and again.</p>
                             
-                            <p>Honestly, the <strong>$699 for the flagship course</strong> was one of the <strong>highest-ROI purchases</strong> we've made as parents. I'd recommend it to any family who wants to shortcut the long learning curve of U.S. college admissions.</p>
+                            <p>Honestly, the <strong>$699 for the flagship course</strong> was one of the <strong>highest-ROI purchases</strong> we've made as parents. I'd recommend it to any family who wants to shortcut the long learning curve of U.S. college admissions."</p>
                         </div>
                     </div>
                 </div>
@@ -77,6 +69,14 @@
                 <p class="story-ending">
                     Today, Yifei and his wife have a clear roadmap for their son's educational journey—<strong>no more guesswork, no more anxiety.</strong>
                 </p>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-avatar">👨‍💼</div>
+                <h3 class="profile-name">Yifei</h3>
+                <p class="profile-journey">Caltech PhD, Founder-CEO</p>
+                <p class="profile-current"><strong>Parent of:</strong> 5-year-old Guangyu</p>
+                <div class="profile-badge">📚 AGT Parent</div>
             </div>
         </div>
     </div>

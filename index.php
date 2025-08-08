@@ -67,7 +67,9 @@
     $js_files = array(
         'syllabus-section.js',
         'faq-section.js',
-        'free-course-section.js'
+        'free-course-section.js',
+        'testimonials-section.js',
+        'courses-section.js'
     );
 
     $js_dir = get_template_directory() . '/js/';

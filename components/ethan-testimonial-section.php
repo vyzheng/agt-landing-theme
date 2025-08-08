@@ -8,14 +8,6 @@
         </div>
 
         <div class="testimonial-wrapper">
-            <div class="profile-card">
-                <div class="profile-avatar">👨‍🎓</div>
-                <h3 class="profile-name">Ethan</h3>
-                <p class="profile-journey">From self-doubt to Harvard PhD</p>
-                <p class="profile-current"><strong>Currently:</strong> Making the most of every research opportunity</p>
-                <div class="profile-badge">🏆 I.I. Rabi Scholar</div>
-            </div>
-
             <div class="story-card">
                 <h3 class="story-title">The Power of a Well-Told Story</h3>
                 
@@ -66,7 +58,7 @@
                             Expand to read the full thank you letter
                         </button>
                         <div class="letter-content">
-                            <p>As you may know, Columbia released its admission decisions a couple of days ago, and I am thrilled to inform you that <strong>I was accepted!</strong> On top of admission, Columbia also offered me a spot in their <strong>I.I. Rabi Scholar Program</strong> — a research program where only around ten freshmen are <strong>hand-picked by professors</strong> to become Rabi Scholars.</p>
+                            <p>"As you may know, Columbia released its admission decisions a couple of days ago, and I am thrilled to inform you that <strong>I was accepted!</strong> On top of admission, Columbia also offered me a spot in their <strong>I.I. Rabi Scholar Program</strong> — a research program where only around ten freshmen are <strong>hand-picked by professors</strong> to become Rabi Scholars.</p>
                             
                             <p>These students are <strong>awarded large amounts of funding</strong> to pursue their own research ideas, get individualized advising, and even get a lounge all to themselves! It seems as though this program is extremely well-tailored and effective in turning its scholars into very impressive scientists!</p>
                             
@@ -74,7 +66,7 @@
                             
                             <p>So, because of this, I am excited to tell you that I have officially committed to Columbia as a Rabi Scholar in the class of 2023! I'm a Columbia Lion now! Roar lions roar!</p>
                             
-                            <p><strong>I would like to take a second to express my appreciation:</strong> thank you so much for everything -- I couldn't have done it without you! I am sure that your kind words following our interview played an instrumental role in the outcome of my application, so thank you very much! I cannot emphasize my gratitude enough.</p>
+                            <p><strong>I would like to take a second to express my appreciation:</strong> thank you so much for everything -- I couldn't have done it without you! I am sure that your kind words following our interview played an instrumental role in the outcome of my application, so thank you very much! I cannot emphasize my gratitude enough."</p>
                         </div>
                     </div>
                 </div>
@@ -82,6 +74,14 @@
                 <p class="story-ending">
                     Today, Ethan is pursuing a <strong>PhD in Chemical Engineering at Harvard</strong>, making good use of every opportunity that <strong>began with a well-told story.</strong>
                 </p>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-avatar">👨‍🎓</div>
+                <h3 class="profile-name">Ethan</h3>
+                <p class="profile-journey">From self-doubt to Harvard PhD</p>
+                <p class="profile-current"><strong>Currently:</strong> Making the most of every research opportunity</p>
+                <div class="profile-badge">🏆 I.I. Rabi Scholar</div>
             </div>
         </div>
     </div>
