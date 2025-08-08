@@ -9,13 +9,13 @@
         
         <!-- Toggle Tabs -->
         <div class="course-tabs">
-            <button class="tab-button active" onclick="toggleTab('self-paced')">Self-Paced Courses</button>
-            <button class="tab-button" onclick="toggleTab('personal-guidance')">Personal Guidance</button>
+            <button class="tab-button active" onclick="toggleTab('self-paced')">Self-paced courses</button>
+            <button class="tab-button" onclick="toggleTab('personal-guidance')">1-1 with Dr. Vivian</button>
         </div>
         
         <!-- Self-paced courses tab content -->
         <div id="self-paced" class="tab-content active">
-            <h3 class="guidance-title">Admissions Game Theory</h3>
+            <!--<h3 class="guidance-title">Admissions Game Theory</h3>-->
             <div class="courses-grid">
                 <div class="course-card">
                     <span class="course-icon">📊</span>
@@ -27,7 +27,7 @@
                         <li>ROI framework for activities</li>
                         <li>Strategic roadmap creation</li>
                     </ul>
-                    <a href="https://buy.stripe.com/8x28wO0socU53sBgHhaAw02" class="course-cta">Get Started</a>
+                    <a href="https://buy.stripe.com/8x28wO0socU53sBgHhaAw02" class="course-cta">Buy now</a>
                 </div>
                 
                 <div class="course-card flagship">
@@ -41,7 +41,7 @@
                         <li>150K+ application insights</li>
                         <li>Complete admissions mastery</li>
                     </ul>
-                    <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="course-cta">Get Started</a>
+                    <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="course-cta">Buy now</a>
                 </div>
                 
                 <div class="course-card">
@@ -54,14 +54,14 @@
                         <li>Real example analysis</li>
                         <li>Story structure mastery</li>
                     </ul>
-                    <a href="https://buy.stripe.com/00w14m3EA6vHd3b76HaAw03" class="course-cta">Get Started</a>
+                    <a href="https://buy.stripe.com/00w14m3EA6vHd3b76HaAw03" class="course-cta">Buy now</a>
                 </div>
             </div>
         </div>
 
         <!-- Personal guidance tab content -->
         <div id="personal-guidance" class="tab-content">
-            <h3 class="guidance-title">Personal Guidance with Dr. Vivian</h3>
+            <!--<h3 class="guidance-title">Personal Guidance with Dr. Vivian</h3>-->
             
             <div class="session-grid">
                 <div class="session-card">
@@ -78,7 +78,7 @@
                 </div>
 
                 <div class="session-card featured">
-                    <div class="popular-badge">Priority Calendar</div>
+                    <div class="popular-badge">Most Popular</div>
                     <span class="session-icon">🎯</span>
                     <h4 class="session-title">Strategy Bundle</h4>
                     <p class="session-tagline">Complete positioning transformation</p>
@@ -88,11 +88,11 @@
                         <li>Spike design & roadmap creation</li>
                         <li>Rating optimization strategy</li>
                     </ul>
-                    <a href="https://calendly.com/admissionsgametheory" target="_blank" class="session-cta">Book Bundle</a>
+                    <a href="https://calendly.com/admissionsgametheory" target="_blank" class="session-cta">Book Now</a>
                 </div>
 
                 <div class="session-card featured">
-                    <div class="popular-badge">Priority Calendar</div>
+                    <div class="popular-badge">Most Popular</div>
                     <span class="session-icon">📝</span>
                     <h4 class="session-title">Essay Bundle</h4>
                     <p class="session-tagline">From blank page to compelling narrative</p>
@@ -102,7 +102,7 @@
                         <li>Story development & structure</li>
                         <li>Draft refinement to final polish</li>
                     </ul>
-                    <a href="https://calendly.com/admissionsgametheory" target="_blank" class="session-cta">Book Bundle</a>
+                    <a href="https://calendly.com/admissionsgametheory" target="_blank" class="session-cta">Book Now</a>
                 </div>
             </div>
         </div>

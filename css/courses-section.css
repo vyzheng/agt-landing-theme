@@ -1,7 +1,7 @@
-/* Courses Section - Minimal & Spacious */
+/* Courses Section - Compact & Consistent */
 .courses-section {
-    background: #fafbfc;
-    padding: 120px 40px;
+    background: #ffffff;  /* Pure white background */
+    padding: 80px 40px;
 }
 
 .courses-container {
@@ -9,63 +9,91 @@
     margin: 0 auto;
 }
 
-/* Clean Header */
+/* Header - Matching other sections */
 .section-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 48px;
 }
 
 .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #3471eb 0%, #7f57e3 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
     font-size: 0.875rem;
-    color: #667eea;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 12px rgba(55, 100, 229, 0.18);
+}
+
+.section-badge::before {
+    content: '💎';
+    font-size: 1rem;
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    color: #111827;
+    color: #1f2937;
     letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    line-height: 1.2;
 }
 
-/* Large Toggle Tabs */
+/* Toggle Tabs - Gradient Accent Style */
+/* Toggle Tabs - Clean Underline Style */
 .course-tabs {
     display: flex;
     justify-content: center;
-    gap: 12px;
-    margin-bottom: 80px;
-    background: #f3f4f6;
-    padding: 8px;
-    border-radius: 16px;
-    max-width: 500px;
+    gap: 48px;
+    margin-bottom: 48px;
+    max-width: 548px;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0;
 }
 
 .tab-button {
-    flex: 1;
-    padding: 20px 40px;
-    border-radius: 12px;
+    padding: 16px 8px;
     border: none;
     background: transparent;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #6b7280;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #9ca3af;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.tab-button::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #111827;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
 }
 
 .tab-button.active {
-    background: white;
     color: #111827;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-weight: 700;
+}
+
+.tab-button.active::after {
+    transform: scaleX(1);
 }
 
 .tab-button:hover:not(.active) {
-    color: #374151;
+    color: #6b7280;
 }
 
 /* Tab Content */
@@ -77,56 +105,84 @@
     display: block;
 }
 
-/* Course Cards Grid */
+/* Course Cards Grid - Compact */
 .courses-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 24px;
+    margin-top: 20px;
 }
 
 .course-card {
     background: white;
-    padding: 48px 40px;
-    border-radius: 20px;
+    padding: 32px 24px;
+    border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
     text-align: center;
     position: relative;
+    border: 1px solid #e5e7eb;
 }
 
 .course-card:hover {
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    border-color: #d1d5db;
 }
 
 .course-card.flagship {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+    border: none;
 }
 
 .popular-badge {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    background: white;
-    color: #667eea;
-    padding: 4px 12px;
-    border-radius: 12px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111827;
+    color: white;
+    padding: 8px 28px 8px 24px;
+    border-radius: 8px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.popular-badge::after {
+    content: '✨';
     font-size: 0.75rem;
-    font-weight: 600;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0.7;
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) rotate(5deg);
+    }
 }
 
 .course-icon {
-    font-size: 2.5rem;
-    margin-bottom: 24px;
+    font-size: 2rem;
+    margin-bottom: 16px;
     display: block;
     opacity: 0.9;
 }
 
 .course-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .flagship .course-title {
@@ -134,10 +190,10 @@
 }
 
 .course-tagline {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: #6b7280;
-    margin-bottom: 32px;
-    line-height: 1.5;
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .flagship .course-tagline {
@@ -145,9 +201,9 @@
 }
 
 .course-price {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 200;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .flagship .course-price {
@@ -156,15 +212,15 @@
 
 .course-features {
     list-style: none;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     padding: 0;
 }
 
 .course-features li {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: #6b7280;
-    margin-bottom: 12px;
-    line-height: 1.5;
+    margin-bottom: 8px;
+    line-height: 1.4;
 }
 
 .flagship .course-features li {
@@ -174,177 +230,207 @@
 .course-cta {
     background: #111827;
     color: white;
-    padding: 16px 48px;
-    border-radius: 8px;
+    padding: 16px 40px;
+    border-radius: 12px;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 0.875rem;
+    font-weight: 600;
+    font-size: 1rem;
     transition: all 0.2s ease;
     display: inline-block;
+    box-shadow: 0 4px 12px rgba(17, 24, 39, 0.15);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
 
 .course-cta:hover {
     background: #1f2937;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(17, 24, 39, 0.25);
+}
+
+.course-cta:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 2px;
 }
 
 .flagship .course-cta {
     background: white;
     color: #667eea;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
 .flagship .course-cta:hover {
     background: #f9fafb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
-/* Personal Guidance Section */
+/* Personal Guidance Section - Compact */
 .guidance-title {
-    font-size: 2.25rem;
+    font-size: 2rem;  /* Bigger than card titles */
     font-weight: 600;
     color: #111827;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
-/* Session Cards Grid */
+/* Session Cards Grid - Compact */
 .session-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 24px;
+    margin-top: 20px;
 }
 
-.session-card {
+.courses-section .session-card {
     background: white;
-    padding: 48px 40px;
-    border-radius: 20px;
+    padding: 32px 24px;
+    border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
     text-align: center;
     position: relative;
+    border: 1px solid #e5e7eb;
 }
 
-.session-card:hover {
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-    transform: translateY(-4px);
+.courses-section .session-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    border-color: #d1d5db;
 }
 
-.session-card .popular-badge {
+.courses-section .session-card .popular-badge {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    background: white;
-    color: #667eea;
-    padding: 4px 12px;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    font-weight: 600;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111827;
+    color: white;
+    padding: 8px 28px 8px 24px;
+    border-radius: 8px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.session-icon {
-    font-size: 2.5rem;
-    margin-bottom: 24px;
+.courses-section .session-card .popular-badge::after {
+    content: '✨';
+    font-size: 0.75rem;
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+.courses-section .session-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
     display: block;
     opacity: 0.9;
 }
 
-.session-title {
-    font-size: 2.25rem;
+.courses-section .session-title {
+    font-size: 1.75rem;  /* Same as course-title */
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
-.session-tagline {
-    font-size: 0.875rem;
+.courses-section .session-tagline {
+    font-size: 0.8125rem;
     color: #6b7280;
-    margin-bottom: 32px;
-    line-height: 1.5;
+    margin-bottom: 20px;
+    line-height: 1.4;
 }
 
-.session-price {
-    font-size: 2.5rem;
+.courses-section .session-price {
+    font-size: 2rem;
     font-weight: 200;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
-.session-features {
+.courses-section .session-features {
     list-style: none;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     padding: 0;
-    text-align: left;
 }
 
-.session-features li {
-    font-size: 0.875rem;
+.courses-section .session-features li {
+    font-size: 0.8125rem;
     color: #6b7280;
-    margin-bottom: 12px;
-    line-height: 1.5;
-    padding-left: 20px;
-    position: relative;
+    margin-bottom: 8px;
+    line-height: 1.4;
 }
 
-.session-features li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: #667eea;
-}
-
-.session-cta {
+.courses-section .session-cta {
     background: #111827;
     color: white;
-    padding: 16px 48px;
-    border-radius: 8px;
+    padding: 16px 40px;
+    border-radius: 12px;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 0.875rem;
+    font-weight: 600;
+    font-size: 1rem;
     transition: all 0.2s ease;
     display: inline-block;
+    box-shadow: 0 4px 12px rgba(17, 24, 39, 0.15);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
 
-.session-cta:hover {
+.courses-section .session-cta:hover {
     background: #1f2937;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(17, 24, 39, 0.25);
 }
 
-/* ✅ FEATURED Session Card (formerly .highlight) */
-.session-card.featured {
+.courses-section .session-cta:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 2px;
+}
+
+
+/* Featured Session Card */
+.courses-section .session-card.featured {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+    border: none;
 }
 
-.featured .session-icon,
-.featured .session-title,
-.featured .session-tagline,
-.featured .session-price,
-.featured .session-cta {
+.courses-section .featured .session-icon,
+.courses-section .featured .session-title,
+.courses-section .featured .session-tagline,
+.courses-section .featured .session-price,
+.courses-section .featured .session-cta {
     color: white;
 }
 
-.featured .session-features li {
+.courses-section .featured .session-features li {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.featured .session-features li::before {
-    color: white;
-}
-
-.featured .session-cta {
+.courses-section .featured .session-cta {
     background: white;
     color: #667eea;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
-.featured .session-cta:hover {
+.courses-section .featured .session-cta:hover {
     background: #f9fafb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .courses-section {
-        padding: 80px 20px;
+        padding: 60px 20px;
     }
 
     .section-title {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 
     .course-tabs {
@@ -352,14 +438,14 @@
     }
 
     .tab-button {
-        padding: 16px 24px;
-        font-size: 0.875rem;
+        padding: 12px 20px;
+        font-size: 0.8125rem;
     }
 
     .courses-grid,
     .session-grid {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 20px;
     }
 
     .course-card.flagship {
@@ -367,6 +453,6 @@
     }
 
     .guidance-title {
-        font-size: 1.5rem;
+        font-size: 1.375rem;
     }
 }
