@@ -3,7 +3,6 @@
     <div class="courses-container">
         <!-- Section Header -->
         <div class="section-header">
-            <div class="section-badge">Pricing</div>
             <h2 class="section-title">Choose Your Path</h2>
         </div>
         

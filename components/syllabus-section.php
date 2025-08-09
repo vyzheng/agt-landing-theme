@@ -1,5 +1,12 @@
 <!-- Syllabus Dashboard Section -->
 <section class="syllabus-dashboard-section" id="syllabus-dashboard">
+    <!-- Section Introduction -->
+    <div class="syllabus-intro-container">
+        <div class="syllabus-intro-content">
+            <h2 class="syllabus-intro-title">What's inside the course?</h2>
+        </div>
+    </div>
+    
     <div class="syllabus-dash-wrapper">
         <div class="syllabus-dash-container">
             <!-- Top Header -->
@@ -8,7 +15,6 @@
                     <div class="syllabus-dash-header-left">
                         <h1 class="syllabus-dash-main-title">Your Flagship Dashboard</h1>
                         <p class="syllabus-dash-subtitle"><strong>Strategy gets you noticed. Story gets you in.</strong></p>
-                        <p class="syllabus-dash-intro">Master Strategizer shows you what matters (based on 150K+ Harvard applications). Master Storyteller shows you how to make them care. You need both.</p>
                     </div>
                     <div class="syllabus-dash-header-right">
                         <div class="syllabus-dash-promo-badges">
@@ -37,26 +43,8 @@
                 </div>
             </div>
 
-            <!-- Left Panel -->
+            <!-- Left Panel - Simplified with Quick Nav only -->
             <div class="syllabus-dash-left-panel">
-                <div class="syllabus-dash-progress-section">
-                    <h3 class="syllabus-dash-progress-header">Your Progress</h3>
-                    <div class="syllabus-dash-overall-stats">
-                        <div class="syllabus-dash-stat-box">
-                            <div class="syllabus-dash-stat-value">3</div>
-                            <div class="syllabus-dash-stat-label">Complete</div>
-                        </div>
-                        <div class="syllabus-dash-stat-box">
-                            <div class="syllabus-dash-stat-value">11</div>
-                            <div class="syllabus-dash-stat-label">To Go</div>
-                        </div>
-                    </div>
-                    <div class="syllabus-dash-progress-bar">
-                        <div class="syllabus-dash-progress-fill" style="width: 21%;"></div>
-                    </div>
-                    <p class="syllabus-dash-progress-details">21% complete • 1h remaining</p>
-                </div>
-
                 <div class="syllabus-dash-quick-nav">
                     <p class="syllabus-dash-nav-title">Quick Jump</p>
                     <a href="#game-theory" class="syllabus-dash-nav-item active">📊 Game Theory</a>
@@ -167,6 +155,72 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Chapter 3 - Personal Brand -->
+                <div class="syllabus-dash-accordion" id="personal-brand">
+                    <div class="syllabus-dash-accordion-header" onclick="toggleSyllabusDashAccordion(this)">
+                        <div class="syllabus-dash-accordion-left">
+                            <p class="syllabus-dash-chapter-label">Chapter 03</p>
+                            <h3 class="syllabus-dash-chapter-title">Personal Brand</h3>
+                            <p class="syllabus-dash-chapter-subtitle">Craft your unique narrative</p>
+                        </div>
+                        <div class="syllabus-dash-accordion-right">
+                            <span class="syllabus-dash-lesson-count">5 lessons</span>
+                            <svg class="syllabus-dash-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 6 15 12 9 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-accordion-content">
+                        <div class="syllabus-dash-lesson-list">
+                            <!-- Add lessons here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 4 - Leadership -->
+                <div class="syllabus-dash-accordion" id="leadership">
+                    <div class="syllabus-dash-accordion-header" onclick="toggleSyllabusDashAccordion(this)">
+                        <div class="syllabus-dash-accordion-left">
+                            <p class="syllabus-dash-chapter-label">Chapter 04</p>
+                            <h3 class="syllabus-dash-chapter-title">Leadership</h3>
+                            <p class="syllabus-dash-chapter-subtitle">Beyond titles and positions</p>
+                        </div>
+                        <div class="syllabus-dash-accordion-right">
+                            <span class="syllabus-dash-lesson-count">6 lessons</span>
+                            <svg class="syllabus-dash-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 6 15 12 9 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-accordion-content">
+                        <div class="syllabus-dash-lesson-list">
+                            <!-- Add lessons here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 5 - Research -->
+                <div class="syllabus-dash-accordion" id="research">
+                    <div class="syllabus-dash-accordion-header" onclick="toggleSyllabusDashAccordion(this)">
+                        <div class="syllabus-dash-accordion-left">
+                            <p class="syllabus-dash-chapter-label">Chapter 05</p>
+                            <h3 class="syllabus-dash-chapter-title">Research & Innovation</h3>
+                            <p class="syllabus-dash-chapter-subtitle">Show intellectual curiosity</p>
+                        </div>
+                        <div class="syllabus-dash-accordion-right">
+                            <span class="syllabus-dash-lesson-count">4 lessons</span>
+                            <svg class="syllabus-dash-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 6 15 12 9 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-accordion-content">
+                        <div class="syllabus-dash-lesson-list">
+                            <!-- Add lessons here -->
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Master Storyteller Panel -->
@@ -204,6 +258,50 @@
                     <div class="syllabus-dash-accordion-content">
                         <div class="syllabus-dash-lesson-list">
                             <!-- Add essay lessons here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 2 - Essay Types -->
+                <div class="syllabus-dash-accordion" id="essay-types">
+                    <div class="syllabus-dash-accordion-header" onclick="toggleSyllabusDashAccordion(this)">
+                        <div class="syllabus-dash-accordion-left">
+                            <p class="syllabus-dash-chapter-label">Chapter 02</p>
+                            <h3 class="syllabus-dash-chapter-title">Essay Types & Frameworks</h3>
+                            <p class="syllabus-dash-chapter-subtitle">Master each prompt type</p>
+                        </div>
+                        <div class="syllabus-dash-accordion-right">
+                            <span class="syllabus-dash-lesson-count">6 lessons</span>
+                            <svg class="syllabus-dash-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 6 15 12 9 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-accordion-content">
+                        <div class="syllabus-dash-lesson-list">
+                            <!-- Add essay type lessons here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chapter 3 - Story Structure -->
+                <div class="syllabus-dash-accordion">
+                    <div class="syllabus-dash-accordion-header" onclick="toggleSyllabusDashAccordion(this)">
+                        <div class="syllabus-dash-accordion-left">
+                            <p class="syllabus-dash-chapter-label">Chapter 03</p>
+                            <h3 class="syllabus-dash-chapter-title">Story Structure</h3>
+                            <p class="syllabus-dash-chapter-subtitle">Build compelling narratives</p>
+                        </div>
+                        <div class="syllabus-dash-accordion-right">
+                            <span class="syllabus-dash-lesson-count">4 lessons</span>
+                            <svg class="syllabus-dash-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 6 15 12 9 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-accordion-content">
+                        <div class="syllabus-dash-lesson-list">
+                            <!-- Add story structure lessons here -->
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-/* Courses Section - Compact & Consistent */
+/* Courses Section - Updated with subtle flagship and consistent CTAs */
 .courses-section {
     background: #ffffff;  /* Pure white background */
     padding: 80px 40px;
@@ -100,7 +100,7 @@
     align-items: center;
 }
 
-/* Cards with HTML-like proportions */
+/* Cards - All white background */
 .course-card {
     background: white;
     padding: 48px 40px;
@@ -109,7 +109,6 @@
     text-align: center;
     position: relative;
     border: 1px solid #f3f4f6;
-    transform: scale(0.98);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -118,48 +117,57 @@
 
 .course-card:hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-    transform: scale(0.98) translateY(-4px);
+    transform: translateY(-4px);
     border-color: #e5e7eb;
 }
 
-/* Flagship card - elevated and scaled */
+/* Flagship card - Subtle elevation without heavy gradient */
 .course-card.flagship {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    transform: scale(1.05) translateY(-8px);
-    box-shadow: 0 16px 40px rgba(102, 126, 234, 0.35);
-    z-index: 10;
+    background: white;
+    border: 2px solid #667eea;
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 16px 40px rgba(102, 126, 234, 0.12);
     position: relative;
 }
 
-.course-card.flagship:hover {
-    transform: scale(1.05) translateY(-12px);
-    box-shadow: 0 20px 48px rgba(102, 126, 234, 0.4);
+.course-card.flagship::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.03) 100%);
+    pointer-events: none;
 }
 
-/* Popular Badge - Modern Star Style */
+.course-card.flagship:hover {
+    transform: scale(1.02) translateY(-8px);
+    box-shadow: 0 20px 48px rgba(102, 126, 234, 0.18);
+}
+
+/* Popular Badge - Blue-Purple Gradient with Shimmer */
 .popular-badge {
     position: absolute;
-    top: 0;
-    right: 0;
-    background: linear-gradient(45deg, #facc15 0%, #fde047 50%, #fbbf24 100%);
-    color: #713f12;
-    padding: 10px 20px 10px 16px;
-    border-radius: 0 20px 0 24px;
-    font-size: 0.625rem;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #3764e5 0%, #5b7fee 100%);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     gap: 6px;
-    box-shadow: 0 2px 8px rgba(250, 204, 21, 0.3);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+    z-index: 1;
 }
 
 .popular-badge::before {
-    content: '★';
-    font-size: 0.75rem;
+    content: '✨';
+    font-size: 0.875rem;
 }
 
 /* Course content - adjusted spacing */
@@ -175,10 +183,7 @@
     font-weight: 600;
     margin-bottom: 8px;
     line-height: 1.2;
-}
-
-.flagship .course-title {
-    color: white;
+    color: #1f2937;
 }
 
 .course-tagline {
@@ -189,18 +194,11 @@
     min-height: 42px;
 }
 
-.flagship .course-tagline {
-    color: rgba(255, 255, 255, 0.9);
-}
-
 .course-price {
     font-size: 2.5rem;
     font-weight: 200;
     margin-bottom: 32px;
-}
-
-.flagship .course-price {
-    color: white;
+    color: #1f2937;
 }
 
 .course-features {
@@ -215,7 +213,6 @@
     color: #6b7280;
     margin-bottom: 12px;
     line-height: 1.5;
-    padding-left: 16px;
     position: relative;
 }
 
@@ -223,20 +220,11 @@
     content: '';
     position: absolute;
     left: 0;
-    color: #9ca3af;
 }
 
-.flagship .course-features li {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.flagship .course-features li::before {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* CTAs - Black for regular cards */
+/* CTAs - All using consistent blue color */
 .course-cta {
-    background: #111827;
+    background: #3764e5;
     color: white;
     padding: 16px 48px;
     border-radius: 8px;
@@ -251,24 +239,14 @@
 }
 
 .course-cta:hover {
-    background: #1f2937;
+    background: #2d50d3;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(55, 100, 229, 0.25);
 }
 
 .course-cta:focus {
     outline: 3px solid #6b7280;
     outline-offset: 2px;
-}
-
-/* Flagship CTA - white for contrast */
-.flagship .course-cta {
-    background: white;
-    color: #667eea;
-    font-weight: 700;
-}
-
-.flagship .course-cta:hover {
-    background: #f9fafb;
 }
 
 /* Personal Guidance Section */
@@ -298,7 +276,6 @@
     text-align: center;
     position: relative;
     border: 1px solid #f3f4f6;
-    transform: scale(0.98);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -307,48 +284,57 @@
 
 .courses-section .session-card:hover {
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-    transform: scale(0.98) translateY(-4px);
+    transform: translateY(-4px);
     border-color: #e5e7eb;
 }
 
-/* Featured session cards */
+/* Featured session cards - subtle elevation like flagship */
 .courses-section .session-card.featured {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    transform: scale(1.05) translateY(-8px);
-    box-shadow: 0 16px 40px rgba(102, 126, 234, 0.35);
-    z-index: 10;
+    background: white;
+    border: 2px solid #667eea;
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 16px 40px rgba(102, 126, 234, 0.12);
     position: relative;
 }
 
+.courses-section .session-card.featured::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.03) 0%, rgba(118, 75, 162, 0.03) 100%);
+    pointer-events: none;
+}
+
 .courses-section .session-card.featured:hover {
-    transform: scale(1.05) translateY(-12px);
-    box-shadow: 0 20px 48px rgba(102, 126, 234, 0.4);
+    transform: scale(1.02) translateY(-8px);
+    box-shadow: 0 20px 48px rgba(102, 126, 234, 0.18);
 }
 
 /* Session badge - same style */
 .courses-section .session-card .popular-badge {
     position: absolute;
-    top: 0;
-    right: 0;
-    background: linear-gradient(45deg, #facc15 0%, #fde047 50%, #fbbf24 100%);
-    color: #713f12;
-    padding: 10px 20px 10px 16px;
-    border-radius: 0 20px 0 24px;
-    font-size: 0.625rem;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #3764e5 0%, #5b7fee 100%);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     display: flex;
     align-items: center;
     gap: 6px;
-    box-shadow: 0 2px 8px rgba(250, 204, 21, 0.3);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
+    z-index: 1;
 }
 
 .courses-section .session-card .popular-badge::before {
-    content: '★';
-    font-size: 0.75rem;
+    content: '✨';
+    font-size: 0.875rem;
 }
 
 /* Session content - matching course cards */
@@ -364,10 +350,7 @@
     font-weight: 600;
     margin-bottom: 8px;
     line-height: 1.2;
-}
-
-.courses-section .featured .session-title {
-    color: white;
+    color: #1f2937;
 }
 
 .courses-section .session-tagline {
@@ -378,18 +361,11 @@
     min-height: 42px;
 }
 
-.courses-section .featured .session-tagline {
-    color: rgba(255, 255, 255, 0.9);
-}
-
 .courses-section .session-price {
     font-size: 2.5rem;
     font-weight: 200;
     margin-bottom: 32px;
-}
-
-.courses-section .featured .session-price {
-    color: white;
+    color: #1f2937;
 }
 
 .courses-section .session-features {
@@ -404,7 +380,6 @@
     color: #6b7280;
     margin-bottom: 12px;
     line-height: 1.5;
-    padding-left: 16px;
     position: relative;
 }
 
@@ -412,20 +387,11 @@
     content: '';
     position: absolute;
     left: 0;
-    color: #9ca3af;
 }
 
-.courses-section .featured .session-features li {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.courses-section .featured .session-features li::before {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* Session CTAs - Black for regular cards */
+/* Session CTAs - Consistent blue color */
 .courses-section .session-cta {
-    background: #111827;
+    background: #3764e5;
     color: white;
     padding: 16px 48px;
     border-radius: 8px;
@@ -440,24 +406,14 @@
 }
 
 .courses-section .session-cta:hover {
-    background: #1f2937;
+    background: #2d50d3;
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(55, 100, 229, 0.25);
 }
 
 .courses-section .session-cta:focus {
     outline: 3px solid #6b7280;
     outline-offset: 2px;
-}
-
-/* Featured session CTA */
-.courses-section .featured .session-cta {
-    background: white;
-    color: #667eea;
-    font-weight: 700;
-}
-
-.courses-section .featured .session-cta:hover {
-    background: #f9fafb;
 }
 
 /* Responsive */
