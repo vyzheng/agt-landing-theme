@@ -1,63 +1,64 @@
-// Email signup handler
-function handleEmailSignup(event) {
-    event.preventDefault();
-    
-    const form = event.target;
-    const emailInput = form.querySelector('.email-input');
-    const button = form.querySelector('.signup-button');
-    const email = emailInput.value;
-    const originalButtonText = button.textContent;
-    
-    // Show loading state
-    button.textContent = 'Sending...';
-    button.disabled = true;
-    
-    // Simulate API call (replace with your actual email service integration)
-    setTimeout(() => {
-        // Here you would normally send the email to your backend
-        // For example:
-        // fetch('/api/subscribe', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify({ email: email, course: 'free-7-day' })
-        // })
+// Free Course Section JavaScript
+
+// Handle ActiveCampaign form customization after it loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait for ActiveCampaign form to load
+    setTimeout(function() {
+        customizeActiveForm();
+    }, 1000);
+});
+
+function customizeActiveForm() {
+    // Find the form fields and add custom classes
+    const form = document.querySelector('._form_1 form');
+    if (form) {
+        // Find name and email fields
+        const fields = form.querySelectorAll('._field');
+        if (fields.length >= 2) {
+            fields[0].classList.add('_field-name');
+            fields[1].classList.add('_field-email');
+        }
         
-        // Show success message
-        const successMessage = document.createElement('div');
-        successMessage.className = 'form-success show';
-        successMessage.textContent = `Success! Check ${email} for your first lesson.`;
-        
-        // Replace form with success message
-        form.style.display = 'none';
-        form.parentElement.insertBefore(successMessage, form.nextSibling);
-        
-        // Optional: Log to console for testing
-        console.log('Email subscribed:', email);
-        
-        // Optional: Track conversion
+        // Add unsubscribe note after submit button
+        const submitButton = form.querySelector('button[type="submit"]');
+        if (submitButton && !form.querySelector('.form-note')) {
+            const note = document.createElement('p');
+            note.className = 'form-note';
+            note.textContent = 'Unsubscribe anytime';
+            submitButton.parentNode.insertBefore(note, submitButton.nextSibling);
+        }
+    }
+}
+
+// Optional: Add calendar day click tracking
+document.querySelectorAll('.calendar-day').forEach(function(day, index) {
+    day.addEventListener('click', function() {
+        // Track which day was clicked (for analytics)
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'sign_up', {
+            gtag('event', 'calendar_day_click', {
                 'event_category': 'engagement',
-                'event_label': 'free_course'
+                'event_label': 'Day ' + (index + 1)
             });
         }
         
-    }, 1000);
-}
-
-// Optional: Add email validation
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-
-// Optional: Show/hide form based on localStorage (if user already signed up)
-document.addEventListener('DOMContentLoaded', function() {
-    const hasSignedUp = localStorage.getItem('free_course_signup');
-    if (hasSignedUp) {
-        const form = document.querySelector('.email-signup-form');
-        if (form) {
-            form.innerHTML = '<p style="color: #10b981; font-weight: 600;">You\'re already enrolled in the free course!</p>';
-        }
-    }
+        // Optional: Add visual feedback
+        this.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+            this.style.transform = '';
+        }, 200);
+    });
 });
+
+// Handle instant access link click
+const instantAccessLink = document.querySelector('.instant-access a');
+if (instantAccessLink) {
+    instantAccessLink.addEventListener('click', function(e) {
+        // Track conversion intent
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'instant_access_click', {
+                'event_category': 'conversion',
+                'event_label': 'free_course_to_paid'
+            });
+        }
+    });
+}

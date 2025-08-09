@@ -1,73 +1,98 @@
-<?php
-// Free course syllabus data
-$syllabus_days = [
-    [
-        'day' => 1,
-        'title' => 'Why do Ivy Leagues reject perfect students?',
-        'description' => 'Colleges think like VCs—you should too!'
-    ],
-    [
-        'day' => 2,
-        'title' => 'How Harvard really grades your application',
-        'description' => 'The 1-5 scale that decides everything'
-    ],
-    [
-        'day' => 3,
-        'title' => 'You\'re studying too much and it\'s hurting your chances',
-        'description' => 'Top grades get you considered, not selected'
-    ],
-    [
-        'day' => 4,
-        'title' => 'Why most ECs don\'t work',
-        'description' => 'You need 1 activity that moves the needle, not 10'
-    ],
-    [
-        'day' => 5,
-        'title' => 'Why trying to be the next Eileen Gu could hurt your application',
-        'description' => 'Sports could drag you down. Here\'s what to do instead'
-    ],
-    [
-        'day' => 6,
-        'title' => 'Don\'t copy that "successful" essay—here\'s why',
-        'description' => 'Viral essays prioritize style over substance, which could hurt your personal score'
-    ],
-    [
-        'day' => 7,
-        'title' => 'You\'ve Learned the Game. Now Play to Win.',
-        'description' => 'Stop guessing, start strategizing'
-    ]
-];
-?>
-
 <!-- Free Email Course Section -->
 <section class="free-course-section" id="free-course">
     <div class="free-course-container">
         <div class="free-course-header">
             <div class="free-course-badge">
-                <span>👀</span>
-                Sneek peek
+                <span>🎯</span>
+                Free 7-Day Course
             </div>
-            <h2 class="free-course-title">Free 7-Day Email Course</h2>
+            <h2 class="free-course-title">Get the Inside Track</h2>
             <p class="free-course-subtitle">
-                Discover the hidden admissions strategies from 150,000 Harvard applications—delivered daily to your inbox
+                7 days. 7 game-changing insights from 150,000+ Harvard applications.
             </p>
         </div>
 
-<div class="_form_1"></div><script src="https://vivianzhengmedium88426.activehosted.com/f/embed.php?id=1&v=9" charset="utf-8"></script>
+        <!-- ActiveCampaign Form -->
+        <div class="form-wrapper">
+            <div class="_form_1"></div>
+            <script src="https://vivianzhengmedium88426.activehosted.com/f/embed.php?id=1&v=9" charset="utf-8"></script>
+        </div>
 
-        <div class="syllabus-preview">
-            <h3 class="syllabus-preview-title">What You'll Learn</h3>
+        <!-- Calendar Layout -->
+        <div class="course-calendar">
+            <div class="calendar-header">
+                <h3>Your 7-Day Journey</h3>
+                <p>One powerful lesson delivered daily</p>
+            </div>
             
-            <div class="syllabus-days">
-                <?php foreach ($syllabus_days as $day): ?>
-                    <div class="syllabus-day">
-                        <div class="day-number"><?php echo $day['day']; ?></div>
-                        <div class="day-content">
-                            <h4 class="day-title"><?php echo htmlspecialchars($day['title']); ?></h4>
-                            <p class="day-description"><?php echo htmlspecialchars($day['description']); ?></p>
-                        </div>
+            <div class="calendar-grid">
+                <!-- Days -->
+                <div class="calendar-day">
+                    <div class="day-number">Day 1</div>
+                    <div class="day-content">
+                        <span class="day-icon">🎯</span>
+                        <h4>The VC Mindset</h4>
+                        <p>Why perfect students fail</p>
                     </div>
-                <?php endforeach; ?>
+                </div>
+
+                <div class="calendar-day">
+                    <div class="day-number">Day 2</div>
+                    <div class="day-content">
+                        <span class="day-icon">📊</span>
+                        <h4>The Rubric</h4>
+                        <p>How Harvard scores you</p>
+                    </div>
+                </div>
+
+                <div class="calendar-day">
+                    <div class="day-number">Day 3</div>
+                    <div class="day-content">
+                        <span class="day-icon">⚡</span>
+                        <h4>The Paradox</h4>
+                        <p>Why studying hurts</p>
+                    </div>
+                </div>
+
+                <div class="calendar-day">
+                    <div class="day-number">Day 4</div>
+                    <div class="day-content">
+                        <span class="day-icon">🚀</span>
+                        <h4>The Spike</h4>
+                        <p>One EC that matters</p>
+                    </div>
+                </div>
+
+                <div class="calendar-day">
+                    <div class="day-number">Day 5</div>
+                    <div class="day-content">
+                        <span class="day-icon">🏆</span>
+                        <h4>The Trap</h4>
+                        <p>When sports backfire</p>
+                    </div>
+                </div>
+
+                <div class="calendar-day">
+                    <div class="day-number">Day 6</div>
+                    <div class="day-content">
+                        <span class="day-icon">✍️</span>
+                        <h4>The Truth</h4>
+                        <p>Why viral essays fail</p>
+                    </div>
+                </div>
+
+                <div class="calendar-day">
+                    <div class="day-number">Day 7</div>
+                    <div class="day-content">
+                        <span class="day-icon">💎</span>
+                        <h4>The Playbook</h4>
+                        <p>Your complete action plan</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instant-access">
+                <p>Don't want to wait? <a href="#pricing">Unlock instantly →</a></p>
             </div>
         </div>
     </div>
