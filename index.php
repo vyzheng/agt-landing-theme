@@ -20,8 +20,8 @@
         'about-me-section.css',
         'syllabus-section.css',
         'faq-section.css',
-        'free-course-section.css',
         'guarantee-section.css',
+        'free-course-section.css',
         'final-unlock-section.css'
     );
 
@@ -48,8 +48,8 @@
         'yifei-testimonial-section.php',
         'courses-section.php',
         'syllabus-section.php',
-        'guarantee-section.php',
         'faq-section.php',
+        'guarantee-section.php',
         'free-course-section.php',
         'final-unlock-section.php'
     );

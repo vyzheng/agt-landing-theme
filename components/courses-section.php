@@ -27,7 +27,7 @@
                         <li>ROI framework for activities</li>
                         <li>Strategic roadmap creation</li>
                     </ul>
-                    <a href="https://buy.stripe.com/8x28wO0socU53sBgHhaAw02" class="course-cta">Buy now</a>
+                    <a href="https://buy.stripe.com/8x28wO0socU53sBgHhaAw02" class="course-cta">Start Now</a>
                 </div>
                 
                 <div class="course-card flagship">
@@ -41,7 +41,7 @@
                         <li>150K+ application insights</li>
                         <li>Complete admissions mastery</li>
                     </ul>
-                    <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="course-cta">Buy now</a>
+                    <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="course-cta">Start Now</a>
                 </div>
                 
                 <div class="course-card">
@@ -54,7 +54,7 @@
                         <li>Real example analysis</li>
                         <li>Story structure mastery</li>
                     </ul>
-                    <a href="https://buy.stripe.com/00w14m3EA6vHd3b76HaAw03" class="course-cta">Buy now</a>
+                    <a href="https://buy.stripe.com/00w14m3EA6vHd3b76HaAw03" class="course-cta">Start Now</a>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
 
                 <div class="session-card featured">
                     <div class="popular-badge">Most Popular</div>
-                    <span class="session-icon">📝</span>
+                    <span class="session-icon">✍️</span>
                     <h4 class="session-title">Essay Bundle</h4>
                     <p class="session-tagline">From blank page to compelling narrative</p>
                     <div class="session-price">$999</div>
