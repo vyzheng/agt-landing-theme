@@ -1,314 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syllabus Section Preview</title>
-    <link rel="stylesheet" href="syllabus-styles.css">
-    <script>
-        function toggleChapter(header) {
-            const chapterItem = header.parentElement;
-            chapterItem.classList.toggle('active');
-        }
-
-        function toggleStrategizerChapters() {
-            const hiddenChapters = document.querySelectorAll('.strategizer-hidden');
-            const button = event.target;
-            
-            hiddenChapters.forEach(chapter => {
-                chapter.classList.toggle('hidden');
-            });
-            
-            if (button.textContent === 'Show All 14 Chapters') {
-                button.textContent = 'Show Less';
-            } else {
-                button.textContent = 'Show All 14 Chapters';
-            }
-        }
-
-        function toggleStorytellerChapters() {
-            const hiddenChapters = document.querySelectorAll('.storyteller-hidden');
-            const button = event.target;
-            
-            hiddenChapters.forEach(chapter => {
-                chapter.classList.toggle('hidden');
-            });
-            
-            if (button.textContent === 'Show All 8 Chapters') {
-                button.textContent = 'Show Less';
-            } else {
-                button.textContent = 'Show All 8 Chapters';
-            }
-        }
-    </script>
-</head>
-<body>
-    <!-- Syllabus Section -->
-    <section class="syllabus-section">
-        <div class="syllabus-container">
-            <div class="syllabus-header">
-                <h2 class="syllabus-title">Flagship Course Curriculum</h2>
-                <p class="syllabus-subtitle">
-                    Get both Master Strategizer + Master Storyteller. Click any chapter to explore lessons and see exactly what you'll learn.
-                </p>
+<!-- Syllabus Dashboard Section -->
+<section class="syllabus-dashboard-section" id="syllabus-dashboard">
+    <div class="syllabus-dash-wrapper">
+        <div class="syllabus-dash-container">
+            <!-- Top Header -->
+            <div class="syllabus-dash-header">
+                <div class="syllabus-dash-header-content">
+                    <div class="syllabus-dash-header-left">
+                        <h1 class="syllabus-dash-main-title">Your Flagship Dashboard</h1>
+                        <p class="syllabus-dash-subtitle"><strong>Strategy gets you noticed. Story gets you in.</strong></p>
+                        <p class="syllabus-dash-intro">Master Strategizer shows you what matters (based on 150K+ Harvard applications). Master Storyteller shows you how to make them care. You need both.</p>
+                    </div>
+                    <div class="syllabus-dash-header-right">
+                        <div class="syllabus-dash-promo-badges">
+                            <span class="syllabus-dash-promo-badge syllabus-dash-badge-savings">
+                                <svg class="syllabus-dash-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                                Save $101
+                            </span>
+                            <span class="syllabus-dash-promo-badge syllabus-dash-badge-limited">
+                                <svg class="syllabus-dash-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                Limited Time
+                            </span>
+                        </div>
+                        <div class="syllabus-dash-header-actions">
+                            <div class="syllabus-dash-bundle-price">
+                                <span class="syllabus-dash-price-compare">$798</span>
+                                <span class="syllabus-dash-price-final">$697</span>
+                            </div>
+                            <a href="https://buy.stripe.com/8x214mgrmdY98MVcr1aAw00" class="syllabus-dash-access-btn">Get Full Access</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Master Strategizer Course -->
-            <div class="course-block">
-                <div class="course-header">
-                    <span class="course-badge strategizer-badge">Part 1 of Flagship</span>
-                    <h3 class="course-title">Master Strategizer</h3>
-                    <p class="course-description">
-                        Learn how every part of your application is evaluated. Build a clear personal brand and plan a winning strategy that leverages your strengths.
-                    </p>
+            <!-- Left Panel -->
+            <div class="syllabus-dash-left-panel">
+                <div class="syllabus-dash-progress-section">
+                    <h3 class="syllabus-dash-progress-header">Your Progress</h3>
+                    <div class="syllabus-dash-overall-stats">
+                        <div class="syllabus-dash-stat-box">
+                            <div class="syllabus-dash-stat-value">3</div>
+                            <div class="syllabus-dash-stat-label">Complete</div>
+                        </div>
+                        <div class="syllabus-dash-stat-box">
+                            <div class="syllabus-dash-stat-value">11</div>
+                            <div class="syllabus-dash-stat-label">To Go</div>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-progress-bar">
+                        <div class="syllabus-dash-progress-fill" style="width: 21%;"></div>
+                    </div>
+                    <p class="syllabus-dash-progress-details">21% complete • 1h remaining</p>
                 </div>
 
-                <div class="chapters-list">
-                    <?php
-                    // Master Strategizer chapters data
-                    $strategizer_chapters = [
-                        [
-                            'number' => 1,
-                            'type' => 'theory-chapter',
-                            'title' => 'Game Theory A',
-                            'subtitle' => 'Why perfect students fail and how Ivies think like VCs, not Fortune 500s',
-                            'lessons' => [
-                                [
-                                    'number' => 1,
-                                    'title' => 'Meet the players',
-                                    'description' => 'Until you understand why Ivies act the way they do, the entire college application process will continue to feel rigged—against you.'
-                                ],
-                                [
-                                    'number' => 2,
-                                    'title' => 'How Ivies get scored by U.S. news: ranking demystified',
-                                    'description' => 'Ivy colleges are chasing things you\'ll never find on your transcript—and if you don\'t know what they are, you\'re falling behind.'
-                                ],
-                                [
-                                    'number' => 3,
-                                    'title' => 'Why perfect students fail: Ivies think like VCs, not Fortune 500s',
-                                    'description' => 'Think of your application as a pitch deck. Are you playing it safe or showing signs of breakout success?'
-                                ],
-                                [
-                                    'number' => 4,
-                                    'title' => 'College admissions is a signaling game',
-                                    'description' => 'You\'re judged on how well you signal your potential—not just what you\'ve done.'
-                                ]
-                            ]
-                        ],
-                        [
-                            'number' => 2,
-                            'type' => 'theory-chapter',
-                            'title' => 'Game Theory B',
-                            'subtitle' => 'The hidden 1-5 scoring system that determines everything',
-                            'lessons' => null // Placeholder for future content
-                        ],
-                        [
-                            'number' => 7,
-                            'type' => 'ec-chapter',
-                            'title' => 'EC Research & Internships',
-                            'subtitle' => 'What separates high-impact work from résumé filler',
-                            'hidden' => true,
-                            'lessons' => null // Placeholder for future content
-                        ]
-                    ];
+                <div class="syllabus-dash-quick-nav">
+                    <p class="syllabus-dash-nav-title">Quick Jump</p>
+                    <a href="#game-theory" class="syllabus-dash-nav-item active">📊 Game Theory</a>
+                    <a href="#personal-brand" class="syllabus-dash-nav-item">🎯 Personal Brand</a>
+                    <a href="#leadership" class="syllabus-dash-nav-item">🏆 Leadership</a>
+                    <a href="#research" class="syllabus-dash-nav-item">🔬 Research</a>
+                    <a href="#essay-principles" class="syllabus-dash-nav-item">✍️ Essay Principles</a>
+                    <a href="#essay-types" class="syllabus-dash-nav-item">📝 Essay Types</a>
+                </div>
+            </div>
 
-                    // Render strategizer chapters
-                    foreach ($strategizer_chapters as $chapter) {
-                        $hiddenClass = isset($chapter['hidden']) && $chapter['hidden'] ? 'hidden strategizer-hidden' : '';
-                        ?>
-                        <div class="chapter-item <?php echo $chapter['type']; ?> <?php echo $hiddenClass; ?>">
-                            <div class="chapter-header" onclick="toggleChapter(this)">
-                                <div class="chapter-number"><?php echo $chapter['number']; ?></div>
-                                <div class="chapter-info">
-                                    <h4 class="chapter-title"><?php echo htmlspecialchars($chapter['title']); ?></h4>
-                                    <p class="chapter-subtitle"><?php echo htmlspecialchars($chapter['subtitle']); ?></p>
-                                </div>
-                                <div class="chapter-toggle">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
+            <!-- Master Strategizer Panel -->
+            <div class="syllabus-dash-course-panel syllabus-dash-strategizer-panel">
+                <!-- Progress Ring -->
+                <div class="syllabus-dash-panel-progress">
+                    <svg width="72" height="72" class="syllabus-dash-progress-ring">
+                        <circle cx="36" cy="36" r="32" class="syllabus-dash-progress-ring-bg"></circle>
+                        <circle cx="36" cy="36" r="32" class="syllabus-dash-progress-ring-fill" style="stroke-dashoffset: 159;"></circle>
+                    </svg>
+                    <div class="syllabus-dash-progress-percent">21%</div>
+                </div>
+
+                <div class="syllabus-dash-panel-header">
+                    <div class="syllabus-dash-panel-badge">Part 1</div>
+                    <h2 class="syllabus-dash-panel-title">Master Strategizer</h2>
+                    <p class="syllabus-dash-panel-desc">14 chapters • 56 lessons • 12 hours</p>
+                </div>
+
+                <!-- Chapter 1 - Game Theory A -->
+                <div class="syllabus-dash-accordion open" id="game-theory">
+                    <div class="syllabus-dash-accordion-header" onclick="toggleSyllabusDashAccordion(this)">
+                        <div class="syllabus-dash-accordion-left">
+                            <p class="syllabus-dash-chapter-label">Chapter 01</p>
+                            <h3 class="syllabus-dash-chapter-title">Game Theory A</h3>
+                            <p class="syllabus-dash-chapter-subtitle">Why perfect students fail</p>
+                        </div>
+                        <div class="syllabus-dash-accordion-right">
+                            <span class="syllabus-dash-lesson-count">4 lessons</span>
+                            <svg class="syllabus-dash-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 6 15 12 9 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-accordion-content">
+                        <div class="syllabus-dash-lesson-list">
+                            <div class="syllabus-dash-lesson-entry">
+                                <div class="syllabus-dash-lesson-header">
+                                    <span class="syllabus-dash-lesson-num">1.1</span>
+                                    <div class="syllabus-dash-lesson-details">
+                                        <h4 class="syllabus-dash-lesson-title">Meet the players</h4>
+                                        <p class="syllabus-dash-lesson-description">Until you understand why Ivies act the way they do, the entire college application process will continue to feel rigged—against you.</p>
+                                    </div>
+                                    <div class="syllabus-dash-completion-dot completed"></div>
                                 </div>
                             </div>
-                            <div class="chapter-content">
-                                <div class="chapter-inner">
-                                    <div class="lessons-list">
-                                        <?php if ($chapter['lessons']) : ?>
-                                            <?php foreach ($chapter['lessons'] as $lesson) : ?>
-                                                <div class="lesson-item">
-                                                    <div class="lesson-header">
-                                                        <span class="lesson-number">Lesson <?php echo $lesson['number']; ?></span>
-                                                        <div class="lesson-content">
-                                                            <h5 class="lesson-title"><?php echo htmlspecialchars($lesson['title']); ?></h5>
-                                                            <p class="lesson-description"><?php echo htmlspecialchars($lesson['description']); ?></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endforeach; ?>
-                                        <?php else : ?>
-                                            <p style="padding: 20px; color: #6b7280; font-style: italic;">Full lesson content coming soon...</p>
-                                        <?php endif; ?>
+                            <div class="syllabus-dash-lesson-entry">
+                                <div class="syllabus-dash-lesson-header">
+                                    <span class="syllabus-dash-lesson-num">1.2</span>
+                                    <div class="syllabus-dash-lesson-details">
+                                        <h4 class="syllabus-dash-lesson-title">How Ivies get scored by U.S. news</h4>
+                                        <p class="syllabus-dash-lesson-description">Ivy colleges are chasing things you'll never find on your transcript—and if you don't know what they are, you're falling behind.</p>
                                     </div>
+                                    <div class="syllabus-dash-completion-dot completed"></div>
+                                </div>
+                            </div>
+                            <div class="syllabus-dash-lesson-entry">
+                                <div class="syllabus-dash-lesson-header">
+                                    <span class="syllabus-dash-lesson-num">1.3</span>
+                                    <div class="syllabus-dash-lesson-details">
+                                        <h4 class="syllabus-dash-lesson-title">Ivies think like VCs, not Fortune 500s</h4>
+                                        <p class="syllabus-dash-lesson-description">Think of your application as a pitch deck. Are you playing it safe or showing signs of breakout success?</p>
+                                    </div>
+                                    <div class="syllabus-dash-completion-dot completed"></div>
+                                </div>
+                            </div>
+                            <div class="syllabus-dash-lesson-entry">
+                                <div class="syllabus-dash-lesson-header">
+                                    <span class="syllabus-dash-lesson-num">1.4</span>
+                                    <div class="syllabus-dash-lesson-details">
+                                        <h4 class="syllabus-dash-lesson-title">College admissions is a signaling game</h4>
+                                        <p class="syllabus-dash-lesson-description">You're judged on how well you signal your potential—not just what you've done.</p>
+                                    </div>
+                                    <div class="syllabus-dash-completion-dot"></div>
                                 </div>
                             </div>
                         </div>
-                    <?php } ?>
+                    </div>
                 </div>
 
-                <button class="show-more-button" onclick="toggleStrategizerChapters()">Show All 14 Chapters</button>
-
-                <!-- Course CTA -->
-                <div class="course-cta-section">
-                    <a href="#" class="cta-preview">Also available individually for $399 →</a>
-                </div>
-            </div>
-
-            <!-- Bundle Divider -->
-            <div class="bundle-divider">
-                <div class="divider-line"></div>
-                <span class="divider-text">both included in flagship</span>
-            </div>
-
-            <!-- Master Storyteller Course -->
-            <div class="course-block">
-                <div class="course-header">
-                    <span class="course-badge storyteller-badge">Part 2 of Flagship</span>
-                    <h3 class="course-title">Master Storyteller</h3>
-                    <p class="course-description">
-                        Craft compelling essays that win over admission officers. Discover the hidden grading rubric and master the winning frameworks for each prompt.
-                    </p>
-                </div>
-
-                <div class="chapters-list">
-                    <?php
-                    // Master Storyteller chapters data
-                    $storyteller_chapters = [
-                        [
-                            'number' => 15,
-                            'title' => 'Essay Principles',
-                            'subtitle' => 'The outsized role essays play and the secret to writing successful college essays',
-                            'lessons' => [
-                                [
-                                    'number' => 1,
-                                    'title' => 'Essays can make or break your most important application rating',
-                                    'description' => 'Before handing in your application, make sure your essay can boost your application'
-                                ],
-                                [
-                                    'number' => 2,
-                                    'title' => 'Why most clever essays fail',
-                                    'description' => 'Don\'t prioritize style over substance—it\'s a trap, but we have the solution'
-                                ],
-                                [
-                                    'number' => 3,
-                                    'title' => 'Why college essays are similar to marketing',
-                                    'description' => 'Understand the first principles of marketing to get admissions officers\' buy-in quickly'
-                                ],
-                                [
-                                    'number' => 4,
-                                    'title' => 'How to be authentic, memorable and effective',
-                                    'description' => 'Learn the proven 5-step framework to write essays that win over admissions officers'
-                                ]
-                            ]
-                        ],
-                        [
-                            'number' => 16,
-                            'title' => 'Essay 1A: Background or Identity',
-                            'subtitle' => 'Turn your background into a powerful admissions-worthy story with specific problems and real impact',
-                            'samples' => [
-                                [
-                                    'number' => 1,
-                                    'title' => 'Don\'t just describe the problem, show how you solved it',
-                                    'description' => 'Focus on action—not just adversity, to turn your background into a powerful admissions-worthy story.'
-                                ],
-                                [
-                                    'number' => 2,
-                                    'title' => 'How to fail immediately: skip the problem, gloss over the impact',
-                                    'description' => 'Without specificity, a good story can fall short. Be clear about your why, what, and how.'
-                                ],
-                                [
-                                    'number' => 3,
-                                    'title' => 'How to fail immediately: Use broad judgments and sweeping generalizations',
-                                    'description' => 'Big-picture reflections without a clear problem or real action make your essay sound smart—but forgettable'
-                                ]
-                            ],
-                            'summary' => 'From lived experience to winning essay: Vague stories and philosophical reflections won\'t cut it. Specific problems and real-world impact win any day.'
-                        ],
-                        [
-                            'number' => 20,
-                            'title' => 'Essay 4: Expressing Gratitude',
-                            'subtitle' => 'Focus on your growth, not just kindness—admission officers want to see transformation',
-                            'hidden' => true,
-                            'lessons' => null
-                        ]
-                    ];
-
-                    // Render storyteller chapters
-                    foreach ($storyteller_chapters as $chapter) {
-                        $hiddenClass = isset($chapter['hidden']) && $chapter['hidden'] ? 'hidden storyteller-hidden' : '';
-                        ?>
-                        <div class="chapter-item <?php echo $hiddenClass; ?>">
-                            <div class="chapter-header" onclick="toggleChapter(this)">
-                                <div class="chapter-number"><?php echo $chapter['number']; ?></div>
-                                <div class="chapter-info">
-                                    <h4 class="chapter-title"><?php echo htmlspecialchars($chapter['title']); ?></h4>
-                                    <p class="chapter-subtitle"><?php echo htmlspecialchars($chapter['subtitle']); ?></p>
-                                </div>
-                                <div class="chapter-toggle">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="chapter-content">
-                                <div class="chapter-inner">
-                                    <div class="lessons-list">
-                                        <?php if (isset($chapter['lessons']) && $chapter['lessons']) : ?>
-                                            <?php foreach ($chapter['lessons'] as $lesson) : ?>
-                                                <div class="lesson-item">
-                                                    <div class="lesson-header">
-                                                        <span class="lesson-number">Lesson <?php echo $lesson['number']; ?></span>
-                                                        <div class="lesson-content">
-                                                            <h5 class="lesson-title"><?php echo htmlspecialchars($lesson['title']); ?></h5>
-                                                            <p class="lesson-description"><?php echo htmlspecialchars($lesson['description']); ?></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endforeach; ?>
-                                        <?php elseif (isset($chapter['samples'])) : ?>
-                                            <?php foreach ($chapter['samples'] as $sample) : ?>
-                                                <div class="lesson-item">
-                                                    <div class="lesson-header">
-                                                        <span class="lesson-number">Sample <?php echo $sample['number']; ?></span>
-                                                        <div class="lesson-content">
-                                                            <h5 class="lesson-title"><?php echo htmlspecialchars($sample['title']); ?></h5>
-                                                            <p class="lesson-description"><?php echo htmlspecialchars($sample['description']); ?></p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endforeach; ?>
-                                        <?php else : ?>
-                                            <p style="padding: 20px; color: #6b7280; font-style: italic;">Full lesson content coming soon...</p>
-                                        <?php endif; ?>
-                                    </div>
-                                    <?php if (isset($chapter['summary'])) : ?>
-                                        <div class="chapter-summary">
-                                            <div class="summary-label">Summary</div>
-                                            <div class="summary-text"><?php echo htmlspecialchars($chapter['summary']); ?></div>
-                                        </div>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
+                <!-- Chapter 2 - Game Theory B -->
+                <div class="syllabus-dash-accordion">
+                    <div class="syllabus-dash-accordion-header" onclick="toggleSyllabusDashAccordion(this)">
+                        <div class="syllabus-dash-accordion-left">
+                            <p class="syllabus-dash-chapter-label">Chapter 02</p>
+                            <h3 class="syllabus-dash-chapter-title">Game Theory B</h3>
+                            <p class="syllabus-dash-chapter-subtitle">The meta-game of admissions</p>
                         </div>
-                    <?php } ?>
+                        <div class="syllabus-dash-accordion-right">
+                            <span class="syllabus-dash-lesson-count">7 lessons</span>
+                            <svg class="syllabus-dash-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 6 15 12 9 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-accordion-content">
+                        <div class="syllabus-dash-lesson-list">
+                            <!-- Add lessons here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master Storyteller Panel -->
+            <div class="syllabus-dash-course-panel syllabus-dash-storyteller-panel">
+                <!-- Progress Ring -->
+                <div class="syllabus-dash-panel-progress">
+                    <svg width="72" height="72" class="syllabus-dash-progress-ring">
+                        <circle cx="36" cy="36" r="32" class="syllabus-dash-progress-ring-bg"></circle>
+                        <circle cx="36" cy="36" r="32" class="syllabus-dash-progress-ring-fill" style="stroke-dashoffset: 185;"></circle>
+                    </svg>
+                    <div class="syllabus-dash-progress-percent">10%</div>
                 </div>
 
-                <button class="show-more-button" onclick="toggleStorytellerChapters()">Show All 8 Chapters</button>
+                <div class="syllabus-dash-panel-header">
+                    <div class="syllabus-dash-panel-badge">Part 2</div>
+                    <h2 class="syllabus-dash-panel-title">Master Storyteller</h2>
+                    <p class="syllabus-dash-panel-desc">8 chapters • 32 lessons • 8 hours</p>
+                </div>
 
-                <!-- Course CTA -->
-                <div class="course-cta-section">
-                    <a href="#" class="cta-preview">Also available individually for $399 →</a>
+                <!-- Chapter 1 - Essay Principles -->
+                <div class="syllabus-dash-accordion" id="essay-principles">
+                    <div class="syllabus-dash-accordion-header" onclick="toggleSyllabusDashAccordion(this)">
+                        <div class="syllabus-dash-accordion-left">
+                            <p class="syllabus-dash-chapter-label">Chapter 01</p>
+                            <h3 class="syllabus-dash-chapter-title">Essay Principles</h3>
+                            <p class="syllabus-dash-chapter-subtitle">Make them remember you</p>
+                        </div>
+                        <div class="syllabus-dash-accordion-right">
+                            <span class="syllabus-dash-lesson-count">5 lessons</span>
+                            <svg class="syllabus-dash-accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 6 15 12 9 18"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="syllabus-dash-accordion-content">
+                        <div class="syllabus-dash-lesson-list">
+                            <!-- Add essay lessons here -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-</body>
-</html>
+    </div>
+</section>
